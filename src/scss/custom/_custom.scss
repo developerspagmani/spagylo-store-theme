@@ -89,6 +89,79 @@ body{
 .productListBlock .productDetails .row{
     width: 100%;
 }
+nav.bg-hover-white{
+    background-color: rgba(243, 243, 243, 1);
+}
+.navbar .nav-link{
+    color: #000000;
+}
+.navbar .nav-link:hover{
+    color: rgba(250, 96, 68, 1);
+}
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active{
+    color: rgba(250, 96, 68, 1);
+}
+.navbar-fixed-light.fixed-top .navbar-nav .nav-link.active,
+.navbar-hover-light:hover .navbar-nav .nav-link.active{
+    color: rgba(250, 96, 68, 1);
+}
+.navbar-icon-link .svg-icon{
+    color: #000000;
+}
+.navbar-dark .navbar-icon-link-badge {
+    background-color: rgba(250, 96, 68, 1);
+    color: #ffffff;
+}
+.navbar-light .navbar-icon-link-badge, .navbar-fixed-light.fixed-top .navbar-icon-link-badge, .navbar-hover-light:hover .navbar-icon-link-badge {
+    background-color: rgba(250, 96, 68, 1);
+    color: #ffffff;
+}
+.navbar-brand-svg{
+    color: #000000;
+}
+.navbar-nav .nav-link{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.footerLogo{
+    margin-bottom: 30px;
+}
+.footerDescription{
+    margin-bottom: 20px;
+}
+.footerSection .row{
+    justify-content: space-between;
+}
+.footerItem:nth-child(1){
+    width: 39.5%;
+}
+.footerItem:nth-child(2){
+    width: 33%;
+}
+.footerItem:nth-child(3){
+    width: 21%;
+}
+.footerSection .signUpTitle{
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+    color: rgba(250, 96, 68, 1);
+    cursor: pointer;
+}
+.footerSection .signUpTitle a{
+    color: rgba(250, 96, 68, 1);
+}
+.footerSection .signUpTitle svg{
+    margin-left: 15px;
+}
 
 
 @media (max-width: 992px){
@@ -102,6 +175,9 @@ body{
     }
     .productListBlock .cartBtn{
         padding: 9px 15px;
+    }
+    .navbar-toggler{
+        color: #000000;
     }
 }
 

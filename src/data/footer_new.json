@@ -1,19 +1,18 @@
 [
     {
-      "title": "<div class='fw-bold text-uppercase text-lg text-dark mb-3'>Sell<span class='text-primary'>.</span></div>",
       "logo": true,
       "content": "Nonprofits: Offer your supporters a convenient and meaningful way to give.",
       "social": [
-        {
-          "title": "twitter",
-          "link": "#"
-        },
         {
           "title": "facebook",
           "link": "#"
         },
         {
           "title": "instagram",
+          "link": "#"
+        },
+        {
+          "title": "twitter",
           "link": "#"
         },
         {
@@ -29,66 +28,34 @@
       "lg": "4"
     },
     {
-      "title": "Shop",
+      "title": "KEEP IN TOUCH",
+      "content": "Subscribe to receive new product updates, be the first to know about sales, and more.",
+      "contentBottomMargin": "3",
+      "form": {
+        "placeholder": "Enter Your Email Address"
+      },
+      "lg": "4"
+    },
+    {
+      "title": "MORE INFO",
       "links": [
         {
-          "title": "For Women",
+          "title": "Shipping, Delivery & Refunds",
           "link": "/category"
         },
         {
-          "title": "For Men",
+          "title": "Partner Program",
           "link": "/category"
         },
         {
-          "title": "Stores",
+          "title": "Privacy Policy",
           "link": "/contact"
         },
         {
-          "title": "Our Blog",
+          "title": "Terms & Conditions",
           "link": "/blog"
-        },
-        {
-          "title": "Shop",
-          "link": "/"
         }
       ],
-      "lg": "2",
-      "md": "6"
-    },
-    {
-      "title": "Company",
-      "links": [
-        {
-          "title": "Login",
-          "link": "/customer-login"
-        },
-        {
-          "title": "Register",
-          "link": "/customer-login"
-        },
-        {
-          "title": "Wishlist",
-          "link": "#"
-        },
-        {
-          "title": "Our Products",
-          "link": "/category"
-        },
-        {
-          "title": "Checkouts",
-          "link": "/checkout1"
-        }
-      ],
-      "lg": "2",
-      "md": "6"
-    },
-    {
-      "title": "Daily Offers & Discounts",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.",
-      "contentBottomMargin": "3",
-      "form": {
-        "placeholder": "Your Email Address"
-      },
       "lg": "4"
     }
   ]

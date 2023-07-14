@@ -1,7 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap"
-import items from "../data/topbar.json"
+import items from "../../data/topbar.json"
 
-export default function TopBar({ review }) {
+export default function TopBarNew({ review }) {
   return (
     <section className="topbar-bg" >
       <div className="container">

@@ -22,6 +22,7 @@ import ActiveLink from "../ActiveLink"
 import menu from "../../data/menu.json"
 
 import TopBar from "./TopBar"
+import TopBarNew from "./topBarNew"
 import FullScreenSearch from "./FullScreenSearch"
 
 import Icons from "./Icons"
@@ -109,7 +110,8 @@ const Header = (props) => {
       }`}
     >
       {/* Top Bar*/}
-      <TopBar innerRef={topbarRef} hideTopbar={props.hideTopbar} />
+        {/*<TopBar innerRef={topbarRef} hideTopbar={props.hideTopbar} />*/}
+        <TopBarNew></TopBarNew>
       {/* Top Bar End*/}
 
       {/* Navbar*/}
@@ -126,7 +128,7 @@ const Header = (props) => {
           } ${additionalNavClasses ? additionalNavClasses : ""} navbar-airy`}
           variant={props.nav.dark ? "dark" : "light"}
         >
-          <Container fluid>
+          <Container>
             {/* Navbar Header  */}
             <Link href="/index-5" passHref>
               <Navbar.Brand className="py-1" aria-label="Back to homepage">

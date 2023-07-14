@@ -39,8 +39,7 @@ const Layout = (pageProps) => {
 
         <NextNProgress color="#3494E6" options={{ showSpinner: false }} />
 
-        {/* {!pageProps.hideHeader && <Header {...headerProps} />} */}
-
+         {!pageProps.hideHeader && <Header {...headerProps} />} 
         <FormProvider>
           <main>{pageProps.children}</main>
         </FormProvider>

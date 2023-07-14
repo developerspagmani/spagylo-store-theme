@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap"
 import ContactFormNew from "../components/ContactFormNew"
-import TopBar from "../components/topBar"
+import TopBarNew from "../components/Header/topBarNew"
 import Banner from "../components/Banner/Banner"
 import Logo from "../components/Logo/Logo"
 import ImageAndTextBlock from "../components/ImageAndTextBlock/ImageAndTextBlock"
@@ -24,7 +24,7 @@ export default function Home1() {
       <>
       {/* Top Bar */}
         
-                <TopBar/>
+                <TopBarNew/>
                 <Logo/>
                  <Banner/> 
                 <ImageAndTextBlock/> 
