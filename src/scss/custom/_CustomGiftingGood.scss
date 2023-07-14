@@ -7,10 +7,10 @@
     --GG_Grey_Dark: #454545;
 }
 // common css
-.container
+/*.container
 {
     max-width: 1100px; 
-}
+} */
 a {
     text-decoration: none;
     color: var(--gg-white, #FFF);
@@ -253,18 +253,18 @@ a:hover {
     line-height: 28px;
 }
 
-@media (max-width: 1200px)
+/*@media (max-width: 1200px)
 {
     .container {
         max-width: 1100px;
     }
 }
-
+*/
 @media (max-width: 992px)
 {
-    .container {
+    /*.container {
         max-width: 670px;
-    }
+    }*/
     .banner h1 {
         font-size: 36px;
         line-height: 46px;
@@ -291,15 +291,15 @@ a:hover {
 
 @media (max-width: 767px)
 {
-    .container {
+    /*.container {
         max-width: 670px;
-    }
+    }*/
 }
 @media (max-width: 576px)
 {
-    .container {
+    /*.container {
         max-width: 325px;
-    }
+    }*/
     .topbar ul {
       text-align: center;
       color: #ffffff;
