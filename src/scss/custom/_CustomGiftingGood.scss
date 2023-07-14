@@ -226,8 +226,8 @@ a:hover {
     font-size: 36px;
     font-weight: 500;
     line-height: 50px; 
-    margin-bottom: 55px;
-    margin-top: 150px;
+    // margin-bottom: 55px;
+    // margin-top: 150px;
 }
 .numbericonblock p{
     color: var(--GG_Grey_Dark);
@@ -235,6 +235,22 @@ a:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px; 
+}
+.space{
+    justify-content: space-between;
+
+}
+.numbericonblock img{
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.numbericonblock p{
+    color: var(--GG_Grey_Dark);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 @media (max-width: 1200px)
