@@ -3,6 +3,7 @@ import NextNProgress from "../components/NextNProgress"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import Footer_new from "./Footer_new"
 
 import { FormProvider } from "./FormContext"
 import { useState } from "react"
@@ -38,13 +39,14 @@ const Layout = (pageProps) => {
 
         <NextNProgress color="#3494E6" options={{ showSpinner: false }} />
 
-        {!pageProps.hideHeader && <Header {...headerProps} />}
+        {/* {!pageProps.hideHeader && <Header {...headerProps} />} */}
 
         <FormProvider>
           <main>{pageProps.children}</main>
         </FormProvider>
 
-        {!pageProps.hideFooter && <Footer />}
+        {/* {!pageProps.hideFooter && <Footer />} */}
+        {!pageProps.hideFooter && <Footer_new />}
         <SvgIcons />
       </div>
     </SSRProvider>

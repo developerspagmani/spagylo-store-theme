@@ -1,0 +1,328 @@
+:root {
+    --GG_Blue: #4D55F5;
+    --GG_Orange: #FA6044;
+    --white: #ffffff;
+    --black: #000;
+    --GG_Grey_Light: #F3F3F3;
+    --GG_Grey_Dark: #454545;
+}
+// common css
+.container
+{
+    max-width: 1100px; 
+}
+a {
+    text-decoration: none;
+    color: var(--gg-white, #FFF);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--GG_Grey_Light);
+}
+
+/**top bar**/
+.topbar {
+    background: var(--GG_Blue);
+    padding: 12px 0px;
+}
+.topbar-bg {
+    background: var(--GG_Blue);
+}
+.topbar .info {
+    font-size: 14px;
+    color: var(--white);
+    line-height: 24px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.topbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.topbar ul li {
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--white);
+}
+
+.topbar ul li a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topbar ul li .active {
+    text-decoration: underline;
+}
+/**Logo**/  
+.logo {
+    padding: 25px 0px;
+    border-bottom: 1px solid var(--white);
+    background-color: var(--GG_Grey_Light);
+}
+
+.logo img {
+    margin: auto;
+    display: block;
+}
+
+/**Banner Section**/
+
+.banner h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--GG_Blue);
+    padding-bottom: 20px;
+    padding-top: 53px;
+    margin: 0;
+}
+.banner h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 76px;
+    text-transform: capitalize;  
+    color: var(--black);
+}
+ .banner p {
+    color: var(--GG_Grey_Dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.banner a {
+    background-color: var(--GG_Orange);
+    color: var(--white);
+    font-size:16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// image and text block
+.imgandtext{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.imgandtext_content h2{
+    color: var(--black, #000);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.imgandtext_image{
+    padding-right: 40px;
+}
+.imgandtext_content{
+    padding-left: 40px;
+}
+.imgandtext_content p {
+    color: var(--gg-grey-dark, #454545);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+.imgandtext_content a {
+    background-color: var(--GG_Orange);
+    color: var(--white);
+    font-size:16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px
+}
+// StepsWithIcon
+.StepsWithIcon h3{
+    color: var(--gg-black, #000);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px; 
+    margin-bottom: 55px;
+    margin-top: 50px;
+}
+.icons img{
+    display: block;
+    margin: auto;
+}
+.icons h5{
+    color: var(--gg-black, #000);
+    text-align: center;
+    font-size: 20px;   
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.icons p{
+    color: var(--gg-grey-dark, #454545);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.threeimageblock h3{
+    color: var(--black);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px; 
+    margin-top: 150px;
+    margin-bottom: 55px;
+}
+.threeimageblock h5{
+    color: var(--black);
+    text-align: center;  
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.threeimageblock h5 a {
+    color: var(--black);
+   
+}
+
+.threeimageblock p {
+    color: var(--GG_Grey_Dark);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: uppercase;
+}
+//numbericonblock
+.numbericonblock h3{
+    color: var(--black);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px; 
+    margin-bottom: 55px;
+    margin-top: 150px;
+}
+.numbericonblock p{
+    color: var(--GG_Grey_Dark);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+@media (max-width: 1200px)
+{
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .container {
+        max-width: 670px;
+    }
+    .banner h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .imgandtext h2{
+        font-size: 28px; 
+        line-height: 40px; 
+    }
+    .imgandtext_content{
+        padding-left: 0px;
+    }
+      // StepsWithIcon
+    .StepsWithIcon h3{
+        font-size: 26px; 
+    }
+    .threeimageblock h5{
+        font-size: 15px;
+    }
+    .threeimageblock h3{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 767px)
+{
+    .container {
+        max-width: 670px;
+    }
+}
+@media (max-width: 576px)
+{
+    .container {
+        max-width: 325px;
+    }
+    .topbar ul {
+      text-align: center;
+      color: #ffffff;
+    }
+    .topbar ul li active {
+        text-decoration: underline;
+    }
+    .banner h1 {
+        font-size: 26px;
+        line-height: 46px;  
+    }
+    .banner img {
+        padding-top: 10px;
+    }
+
+    .imgandtext h2{
+        font-size: 26px; 
+        line-height: 40px; 
+    }
+    .imgandtext {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .imgandtext_content{
+        padding-left: 0px;
+    }
+   // StepsWithIcon
+    .StepsWithIcon h3{
+        font-size: 16px; 
+    }
+    // ThreeImageBlock
+    .StepsWithIcon h3{
+        font-size: 16px; 
+    }
+    .threeimageblock h5{
+        font-size: 15px;
+    }
+    .threeimageblock h3{
+        font-size: 16px;
+    }
+
+}

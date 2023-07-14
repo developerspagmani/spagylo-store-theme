@@ -73,7 +73,8 @@ const Footer = () => {
                             socialIconFA = faPinterest
                             break
                           case "vimeo":
-                            socialIconFA = faVimeo
+                            socialIconFA = faVimeo 
+                            // faYoutube
                             break
                           default:
                             socialIconFA = faTwitter

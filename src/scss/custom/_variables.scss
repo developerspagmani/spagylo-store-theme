@@ -42,12 +42,12 @@ $graysNamed: (
   "gray-900": $gray-900,
 );
 
-$blue: #0d6efd !default;
+$blue: #4D55F5 !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
-$orange: #fd7e14 !default;
+$orange: #FA6044 !default;
 $yellow: #ffc107 !default;
 $green: #35b653 !default;
 $teal: #20c997 !default;
@@ -65,7 +65,7 @@ $navbarHeight: 72px;
 } @else if $templateColour==green and not $primary {
   $primary: #429244;
 } @else if $templateColour==blue and not $primary {
-  $primary: #3494e6;
+  $primary: #4D55F5;
 } @else if $templateColour==sea and not $primary {
   $primary: #3d7582;
 } @else if $templateColour==violet and not $primary {
@@ -281,9 +281,9 @@ $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 
-$font-family-serif: "Playfair Display", serif !default;
-$font-family-sans-serif: "HK Grotesk", sans-serif !default;
-$font-family-heading: "HK Grotesk", sans-serif !default;
+$font-family-serif: "Poppins", serif !default;
+$font-family-sans-serif: "Poppins", sans-serif !default;
+$font-family-heading: "Poppins", sans-serif !default;
 
 $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono",
   "Courier New", monospace !default;

@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import "swiper/css/bundle"
 import "../../public/fonts/hkgrotesk/stylesheet.css"
 import "../scss/style.default.scss"
+import "../scss/custom/_CustomGiftingGood.scss"
 
 const App = ({ Component, pageProps }) => {
   return (

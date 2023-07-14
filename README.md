@@ -1,1 +1,1 @@
-# spagylo-store-theme
+# nextjs-html
