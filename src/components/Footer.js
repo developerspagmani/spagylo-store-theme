@@ -27,9 +27,9 @@ const Footer = () => {
   return (
     <footer className="position-relative z-index-10 d-print-none">
       {/* Services block*/}
-      <ServicesBlock />
+      {/*<ServicesBlock />*/}
 
-      <div className="py-6 bg-gray-200 text-muted">
+      {/*<div className="py-6 bg-gray-200 text-muted">
         <Container>
           <Row>
             {footerContent &&
@@ -146,7 +146,7 @@ const Footer = () => {
               ))}
           </Row>
         </Container>
-      </div>
+      </div>*/}
       <div className="py-4 fw-light bg-gray-800 text-gray-300">
         <Container>
           <Row className="align-items-center">

@@ -1,0 +1,14 @@
+.productListBlock .btn{
+    background-color: rgba(250, 96, 68, 1);
+    color: #ffffff;
+    border: 1px solid rgba(250, 96, 68, 1);
+}
+.productListBlock .btn:hover{
+    background-color: #ffffff;
+    color: rgba(250, 96, 68, 1);
+}
+@media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1124px;
+    }
+}
