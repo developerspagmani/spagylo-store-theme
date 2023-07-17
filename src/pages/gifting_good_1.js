@@ -28,7 +28,7 @@ export default function Home() {
       <>
        <TopBarNew/> 
        <Logo/>
-       <Banner items={items}/> 
+       {/* <Banner items={items}/>  */}
        <HolidayCardProcessBlock/>
        <HelpBlock/>
        <TextAndLogo/>
