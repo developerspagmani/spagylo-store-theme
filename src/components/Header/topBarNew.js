@@ -3,9 +3,9 @@ import items from "../../data/topbar.json"
 
 export default function TopBarNew({  }) {
   return (
-    <section className="topbar-bg" style={{backgroundColor: "#4D55F5"}}>
+    <section className="topbar-bg">
       <Container>
-        <Row className="topbar" style={{backgroundColor: "#4D55F5"}}>
+        <Row className="topbar">
           <Col lg="6" md="6" xs="12">
             <p className="info">{items.content}</p>
           </Col>

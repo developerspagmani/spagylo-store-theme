@@ -7,6 +7,8 @@ import ThreeImageBlock from "../components/ThreeImageBlock"
 import NumberIconBlock from "../components/NumberIconBlock"
 import TextAndImageBlock from "../components/TextAndImageBlock"
 import TextAndFormBlock from "../components/TextAndFormBlock"
+import datas from "../data/gifting-good-admin.json"
+
 
 export async function getStaticProps() {
     return {
@@ -14,16 +16,20 @@ export async function getStaticProps() {
         nav: {
           light: true,
         },
-        title: "Gifting-Good-Admin",
+        title: "Gifting Good Admin",
       },
     }
 }
 
 export default function GiftingGoodAdmin(){
+
     return(
         <>
-            <Logo/>
-            <Banner/> 
+            {datas.map((data,index) => {
+                return(
+                    <Banner data={data} />
+                )
+            })}
             <ImageAndTextBlock/> 
             <StepsWithIcon/>
             <ThreeImageBlock/>  

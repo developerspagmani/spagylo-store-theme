@@ -23,9 +23,13 @@ body{
     padding: 9px 24px;
     margin: inherit;
     width: 147px;
+    cursor: pointer;
 }
 .productListBlock .cartBtn:hover{
     background-color: var(--white);
+    color: var(--GG_Orange);
+}
+.productListBlock .cartBtn:hover a{
     color: var(--GG_Orange);
 }
 .productListBlock h3.productListTitle{
@@ -236,6 +240,7 @@ nav.bg-hover-white{
 .footerSection form .input-group{
     padding-bottom: 3px;
 }
+
 
 @media (max-width: 992px){
     .productListBlock .cardItem {

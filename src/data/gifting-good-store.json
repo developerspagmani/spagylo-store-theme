@@ -1,0 +1,60 @@
+[
+    {
+        "page_id": 1,
+        "store_id": "84",
+        "blocks": [
+            {
+                "label": "Banner",
+                "name": "banner",
+                "content": {
+                    "left_content": {
+                        "heading": "Bring in More Donations with Holiday Cards",
+                        "sub_heading": "Gifting Good",
+                        "description": "Nonprofits: Offer your supporters a convenient and meaningful way to give.",
+                        "button_label":"Request a demo",
+                        "button_url":"#"
+                    },
+                    "right_content": {
+                        "img_url": "/img/Cards.png",
+                        "img_name": "happy new year.jpg"
+                    }
+                }
+            },
+            {
+                "label": "Steps",
+                "name": "card_buy_Steps"
+            },
+            {
+                "label": "Product List",
+                "name": "product_list",
+                "product": {
+                    "heading": "Holiday Card Product",
+                    "collection_name": "Featured Product",
+                    "limit": "4"
+                }
+            },
+            {
+                "label": "Text and Image",
+                "name": "text_and_image",
+                "content": {
+                    "left_content": {
+                        "heading": "Heading",
+                        "sub_heading": "Sub Heading",
+                        "description": "Description",
+                        "button_label":"Buy a Card",
+                        "button_url":"#"
+                    },
+                    "right_content": {
+                        "img_url": "https://holiday-cards-product-images.s3.ap-south-1.amazonaws.com/product-images/84/happy%20new%20year-2.jpg",
+                        "img_name": "happy new year-2.jpg"
+                    }
+                }
+            },
+            {
+				"label": "Subscription",
+                "name": "subscription"
+			}
+
+        ]
+    }
+]
