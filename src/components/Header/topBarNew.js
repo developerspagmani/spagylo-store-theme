@@ -1,11 +1,11 @@
 import { Row, Col, Container } from "react-bootstrap"
 import items from "../../data/topbar.json"
 
-export default function TopBarNew({ review }) {
+export default function TopBarNew({  }) {
   return (
-    <section className="topbar-bg">
+    <section className="topbar-bg" style={{backgroundColor: "#4D55F5"}}>
       <Container>
-        <Row className="topbar">
+        <Row className="topbar" style={{backgroundColor: "#4D55F5"}}>
           <Col lg="6" md="6" xs="12">
             <p className="info">{items.content}</p>
           </Col>

@@ -111,7 +111,7 @@ const Header = (props) => {
     >
       {/* Top Bar*/}
         {/*<TopBar innerRef={topbarRef} hideTopbar={props.hideTopbar} />*/}
-        <TopBarNew></TopBarNew>
+        <TopBarNew/>
       {/* Top Bar End*/}
 
       {/* Navbar*/}

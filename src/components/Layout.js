@@ -9,6 +9,8 @@ import { FormProvider } from "./FormContext"
 import { useState } from "react"
 import SvgIcons from "./SvgIcons"
 import SSRProvider from "react-bootstrap/SSRProvider"
+import TopBarNew from "./Header/topBarNew"
+
 const Layout = (pageProps) => {
   const [paddingTop, setPaddingTop] = useState(0)
   const headerProps = {
@@ -39,10 +41,10 @@ const Layout = (pageProps) => {
 
         <NextNProgress color="#3494E6" options={{ showSpinner: false }} />
 
-         {!pageProps.hideHeader && <Header {...headerProps} />} 
-        <FormProvider>
+         {/*{!pageProps.hideHeader && <Header {...headerProps} />} */}
+         <TopBarNew/>
           <main>{pageProps.children}</main>
-        </FormProvider>
+       
 
         {/* {!pageProps.hideFooter && <Footer />} */}
         {!pageProps.hideFooter && <Footer_new />}

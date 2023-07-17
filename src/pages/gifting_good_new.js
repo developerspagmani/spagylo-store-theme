@@ -20,7 +20,6 @@ export async function getStaticProps() {
 export default function Home1() {
     return (
       <>  
-        <TopBarNew/>
         <Logo/>
         <Banner items={items}/> 
         <HolidayCardProcessBlock/>
