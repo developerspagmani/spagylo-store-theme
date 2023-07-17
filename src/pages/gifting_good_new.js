@@ -7,6 +7,8 @@ import ImageAndTextBlock from "../components/ImageAndTextBlock/ImageAndTextBlock
 import StepsWithIcon from "../components/StepsWithIcon"
 import ThreeImageBlock from "../components/ThreeImageBlock"
 import NumberIconBlock from "../components/NumberIconBlock"
+import TextAndImageBlock from "../components/TextAndImageBlock"
+import TextAndFormBlock from "../components/TextAndFormBlock"
 
 export async function getStaticProps() {
   return {
@@ -31,6 +33,8 @@ export default function Home1() {
                 <StepsWithIcon/>
                 <ThreeImageBlock/>  
                 <NumberIconBlock/>
+                <TextAndImageBlock/>
+                <TextAndFormBlock/>
 
                 
      {/* <section className="pt6 pb-5 bg-gray-100" style={{ paddingTop: "200px" }}>
@@ -183,10 +187,10 @@ export default function Home1() {
           </Row>
         </Container>
       </section> */}
-      {/* <section className="pt-6 pb-1 bg-white-100">
+       {/* <section className="pt-6 pb-1 bg-white-100">
         <Container>
         <Row>
-          <Col lg="6"  style={{backgroundColor: "#ffffff",}}>
+          <Col lg="6">
             <div className=" text-start text-black ">
               <h2 >
               Become a Preferred Nonprofit Partner

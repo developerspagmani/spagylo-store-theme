@@ -3,7 +3,7 @@ import { Row, Col, Container, Button} from "react-bootstrap"
 export default function Logo({ review }) {
   return (
     
-    <section className="Logo">
+    <section className="logo_bg">
             <Container>
             <Row>
                   <Col lg = "12"  >

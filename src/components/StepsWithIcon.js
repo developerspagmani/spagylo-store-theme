@@ -5,6 +5,9 @@ import items from "../data/stepswithiconData.json"
 export default function StepsWithIcon({ review }) {
   return (
     <section className="StepsWithIcon">
+        <img src="/img/paper_top.png" class="paper_top" alt="paper-top"/>
+        <div className="bg_paper">
+
         <div className="container">
             <div className="heading">
                 <h3>{items.heading}</h3>
@@ -33,5 +36,8 @@ export default function StepsWithIcon({ review }) {
             </Col>
         </Row>
         </div>
+    </div>
+    <img src="/img/paper_bottom.png" class="paper_bottom" alt="paper-bottom"/>
+    
     </section>
   )}
