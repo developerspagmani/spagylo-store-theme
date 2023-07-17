@@ -23,16 +23,18 @@ export async function getStaticProps() {
 
 export default function Home1() {
     return (
-      <>  
-        <TopBarNew/>
-        <Logo/>
-          <Banner/> 
-        <ImageAndTextBlock/> 
-        <StepsWithIcon/>
-        <ThreeImageBlock/>  
-        <NumberIconBlock/>
-        <TextAndImageBlock/>
-        <TextAndFormBlock/>
-      </>
+      <>
+      {/* Top Bar */}
+        
+                <TopBarNew/>
+                <Logo/>
+                 <Banner/> 
+                <ImageAndTextBlock/> 
+                <StepsWithIcon/>
+                <ThreeImageBlock/>  
+                <NumberIconBlock/>
+                <TextAndImageBlock/>
+                <TextAndFormBlock/>
+                </>
     )
 }

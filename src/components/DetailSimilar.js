@@ -1,13 +1,14 @@
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 
 import Product from "./Product"
 
+import { Row, Col, Container, Button } from "react-bootstrap"
 import products from "../data/products.json"
 
 const DetailSimilar = (props) => {
   return (
     <section className="my-5">
-      <div className="container">
+      <Container>
         <header className="text-center">
           <h6 className="text-uppercase mb-5">You might also like</h6>
         </header>
@@ -19,7 +20,7 @@ const DetailSimilar = (props) => {
             </Col>
           ))}
         </Row>
-      </div>
+      </Container>
     </section>
   )
 }

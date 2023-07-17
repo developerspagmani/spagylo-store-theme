@@ -1,5 +1,8 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap"
 import ContactFormNew from "../components/ContactFormNew"
+import TopBarNew from "../components/Header/topBarNew"
+import Logo from "../components/Logo"
+
 export async function getStaticProps() {
   return {
     props: {
@@ -18,7 +21,9 @@ export async function getStaticProps() {
 export default function Home1() {
     return (
       <>
-       <section className=" pb-5 bg-white-100" >
+       <TopBarNew/> 
+       <Logo/>
+       {/* <section className=" pb-5 bg-white-100" >
             <Container>
                 <Row>
                     <Col lg = "12" >
@@ -128,7 +133,7 @@ export default function Home1() {
               
             </Row>
           </Container>
-        </section>
+        </section> */}
       </>
     )
 }

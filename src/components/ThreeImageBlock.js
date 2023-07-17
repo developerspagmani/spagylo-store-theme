@@ -5,9 +5,9 @@ import { Row, Col, Container, Button} from "react-bootstrap"
 export default function ThreeImageBlock({ review }) {
   return (
     <section className="threeimageblock">
-     <div className="container">
-             <h3>Client Holiday Cards</h3>              
-          <Row >
+     <Container>
+        <h3>Client Holiday Cards</h3>              
+          <Row>
               <Col lg="3" md="3" xs="12">
                 <div>
                     <img src="/img/Card1.jpg" alt="card" className="w-100"/>        
@@ -30,6 +30,6 @@ export default function ThreeImageBlock({ review }) {
                  </div>
               </Col>
           </Row>
-       </div>
+       </Container>
      </section>
   )}
