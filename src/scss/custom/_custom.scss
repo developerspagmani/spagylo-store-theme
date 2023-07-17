@@ -12,10 +12,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .productListBlock .cartBtn{
-    background-color: rgba(250, 96, 68, 1);
-    color: #ffffff;
-    border: 1px solid rgba(250, 96, 68, 1);
-    font-family: Poppins;
+    background-color: var(--GG_Orange);
+    color: var(--white);
+    border: 1px solid var(--GG_Orange);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -26,11 +25,10 @@ body{
     width: 147px;
 }
 .productListBlock .cartBtn:hover{
-    background-color: #ffffff;
-    color: rgba(250, 96, 68, 1);
+    background-color: var(--white);
+    color: var(--GG_Orange);
 }
 .productListBlock h3.productListTitle{
-    font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
@@ -50,16 +48,14 @@ body{
     width: 47%;
 }
 .productListBlock .productTitle{
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px; 
     letter-spacing: 1px;
-    color: #000000;
+    color: var(--black);
 }
 .productListBlock .productPrice{
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -68,17 +64,16 @@ body{
 }
 .productListBlock .loadMoreLink{
     margin-top: 10px;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 125% */
     text-transform: uppercase;
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
     cursor: pointer;
 }
 .productListBlock .loadMoreLink a{
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
 }
 .productListBlock .loadMoreLink svg{
     margin-left: 15px;
@@ -90,37 +85,36 @@ body{
     width: 100%;
 }
 nav.bg-hover-white{
-    background-color: rgba(243, 243, 243, 1);
+    background-color: var(--GG_Grey_Light);
 }
 .navbar .nav-link{
-    color: #000000;
+    color: var(--black);
 }
 .navbar .nav-link:hover{
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
 }
 .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active{
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
 }
 .navbar-fixed-light.fixed-top .navbar-nav .nav-link.active,
 .navbar-hover-light:hover .navbar-nav .nav-link.active{
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
 }
 .navbar-icon-link .svg-icon{
-    color: #000000;
+    color: var(--black);
 }
 .navbar-dark .navbar-icon-link-badge {
-    background-color: rgba(250, 96, 68, 1);
-    color: #ffffff;
+    background-color: var(--GG_Orange);
+    color: var(--white);
 }
 .navbar-light .navbar-icon-link-badge, .navbar-fixed-light.fixed-top .navbar-icon-link-badge, .navbar-hover-light:hover .navbar-icon-link-badge {
-    background-color: rgba(250, 96, 68, 1);
-    color: #ffffff;
+    background-color: var(--GG_Orange);
+    color: var(--white);
 }
 .navbar-brand-svg{
-    color: #000000;
+    color: var(--black);
 }
 .navbar-nav .nav-link{
-    font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -132,37 +126,116 @@ nav.bg-hover-white{
 }
 .footerDescription{
     margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 .footerSection .row{
     justify-content: space-between;
 }
 .footerItem:nth-child(1){
-    width: 39.5%;
+    width: 39%;
 }
 .footerItem:nth-child(2){
-    width: 33%;
+    width: 33.3%;
 }
 .footerItem:nth-child(3){
-    width: 21%;
+    width: 22%;
 }
 .footerSection .signUpTitle{
-    margin-top: 10px;
-    font-family: Poppins;
+    margin-bottom: 30px;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 125% */
     text-transform: uppercase;
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
     cursor: pointer;
 }
 .footerSection .signUpTitle a{
-    color: rgba(250, 96, 68, 1);
+    color: var(--GG_Orange);
 }
 .footerSection .signUpTitle svg{
     margin-left: 15px;
 }
-
+.footerSection .list-inline-item{
+    margin-right: 15px;
+}
+.footerSection .list-inline-item:last-child{
+    margin-right: 0px;
+}
+.footerSection .footerSubTitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+.footerSection .list-unstyled li a{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    text-transform: capitalize;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.footerSection .list-unstyled li{
+    margin-bottom: 20px;
+}
+.footerSection .form-control{
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    padding: 0;
+}
+.footerSection .form-control::placeholder{
+    color: var(--GG_Grey_Dark);
+}
+.footerSection .subscribeBtn{
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+    color: var(--GG_Orange);
+    letter-spacing: 0;
+}
+.footerSection .subscribeBtn:hover{
+    background: transparent;
+}
+.footerSection .footerWrapper{
+    padding-top: 50px;
+}
+.footerSection .footerItem{
+    padding-bottom: 50px;
+}
+.footerSection .list-inline, .footerSection .list-unstyled{
+    margin-bottom: 0;
+}
+.footerSection .footerWrapper .container{
+    border-bottom: 1px solid rgba(69, 69, 69, 0.20000000298023224);
+}
+.footerSection .list-unstyled li:last-child{
+    margin-bottom: 0;
+}
+.footerSection .copyRights{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black);
+}
+.footerSection form{
+    border-bottom: 2px solid #a2a2a2;
+}
+.footerSection form .input-group{
+    padding-bottom: 3px;
+}
 
 @media (max-width: 992px){
     .productListBlock .cardItem {
@@ -177,7 +250,22 @@ nav.bg-hover-white{
         padding: 9px 15px;
     }
     .navbar-toggler{
-        color: #000000;
+        color: var(--black);
+    }
+    .footerItem:nth-child(1){
+        width: 31%;
+    }
+    .footerItem:nth-child(2){
+        width: 37%;
+    }
+    .footerItem:nth-child(3){
+        width: 27%;
+    }
+    .footerSection .subscribeBtn{
+        font-size: 14px;
+    }
+    .footerSection .form-control{
+        font-size: 12px;
     }
 }
 
@@ -205,6 +293,21 @@ nav.bg-hover-white{
         font-size: 14px;
         margin: inherit;
         width: 130px;
+    }
+    .footerItem:nth-child(1){
+        width: 100%;
+    }
+    .footerItem:nth-child(2){
+        width: 100%;
+    }
+    .footerItem:nth-child(3){
+        width: 100%;
+    }
+    .footerDescription, .footerSection .list-unstyled li a{
+        font-size: 14px;
+    }
+    .footerSection .footerSubTitle{
+        font-size: 16px;
     }
 
 }

@@ -1,10 +1,10 @@
 :root {
     --GG_Blue: #4D55F5;
-    --GG_Orange: #FA6044;
+    --GG_Orange: #FA6044; //rgba(250, 96, 68, 1)
     --white: #ffffff;
-    --black: #000;
-    --GG_Grey_Light: #F3F3F3;
-    --GG_Grey_Dark: #454545;
+    --black: #000000; 
+    --GG_Grey_Light: #F3F3F3; //rgba(243, 243, 243, 1)
+    --GG_Grey_Dark: #454545; //rgba(69, 69, 69, 1)
 }
 // common css
 .primary_btn {

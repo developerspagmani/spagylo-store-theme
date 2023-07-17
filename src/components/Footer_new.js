@@ -29,14 +29,14 @@ const Footer_new = () => {
       {/* Services block*/}
       {/*<ServicesBlock />*/}
 
-      <div className="py-6 bg-gray-200 text-muted">
+      <div className="bg-white footerWrapper">
         <Container>
           <Row>
             {footerContent &&
               footerContent.map((item,index) => (
                 <div
                   key={item.title}
-                  className="mb-5 mb-lg-0 footerItem"
+                  className="footerItem"
                 >
                 {footerContent.findIndex((element,i) => i == index) == 0  && 
                   <svg className="footerLogo" xmlns="http://www.w3.org/2000/svg" width="128" height="42" viewBox="0 0 128 42" fill="none">
@@ -60,7 +60,7 @@ const Footer_new = () => {
                 </svg>
                 }
                 {item.title && 
-                    <div className="fw-bold text-uppercase text-dark mb-3">
+                    <div className="fw-bold text-uppercase text-dark mb-3 footerSubTitle">
                       {item.logo ? (
                         <div dangerouslySetInnerHTML={{ __html: item.title }} />
                       ) : (
@@ -129,7 +129,7 @@ const Footer_new = () => {
                       {item.links.map((link) => (
                         <li key={link.title}>
                           <Link href={link.link}>
-                            <a className="text-muted">
+                            <a>
                               {link.title}
                               {link.new && (
                                 <Badge
@@ -148,7 +148,7 @@ const Footer_new = () => {
                   )}
                   {item.form && (
                     <Form id="newsletter-form" action="#">
-                      <InputGroup className="input-group mb-3">
+                      <InputGroup className="input-group">
                         <Form.Control
                           type="email"
                           placeholder={item.form.placeholder}
@@ -156,7 +156,7 @@ const Footer_new = () => {
                           className="bg-transparent border-dark border-end-0"
                         />
                         <Button
-                          className="border-start-0"
+                          className="border-start-0 subscribeBtn"
                           variant="outline-dark"
                           type="submit"
                           aria-label="Search"
@@ -174,8 +174,8 @@ const Footer_new = () => {
       <div className="py-4 fw-bold bg-white text-black-300">
         <Container>
           <Row className="align-items-center">
-            <Col md="10" className="text-center text-md-center">
-              <p className="text-sm mb-md-0">
+            <Col className="text-center text-md-center">
+              <p className="text-sm mb-md-0 copyRights">
                 © 2023, Gifting Good. All rights reserved.
               </p>
             </Col>
