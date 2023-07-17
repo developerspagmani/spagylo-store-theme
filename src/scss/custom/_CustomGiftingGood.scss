@@ -19,10 +19,7 @@
     display: block;
     max-width: 187px;
 }
-/*.container
-{
-    max-width: 1100px; 
-} */
+
 a {
     text-decoration: none;
     color: var(--gg-white, #FFF);
@@ -30,9 +27,10 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    // background: var(--GG_Grey_Light);
+   
 }
 
+/**GG Landing Page**/
 /**top bar**/
 .topbar {
     background: var(--GG_Orange);
@@ -212,10 +210,8 @@ a:hover {
 .paper_top{
     width: 100%;
     background: var(--GG_Grey_Light);
-
-
 }
-
+// threeImageBlock
 .threeimageblock h3{
     color: var(--black);
     text-align: center;
@@ -295,6 +291,7 @@ a:hover {
          padding: 75px 0px;
         background: var(--GG_Grey_Light);
 }
+// textandimage Block
 .textandimage{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -325,6 +322,8 @@ a:hover {
     text-transform: uppercase;
     padding: 10px 25px 10px 25px
 }
+
+// textandform block
 .textandform h4{
     color: var(--GG_Blue);
     font-size: 20px;
@@ -369,10 +368,12 @@ a:hover {
     /*.container {
         max-width: 670px;
     }*/
+    //banner
     .banner h1 {
         font-size: 36px;
         line-height: 46px;
     }
+    //imgandtext
     .imgandtext h2{
         font-size: 28px; 
         line-height: 40px; 
@@ -384,13 +385,13 @@ a:hover {
     .StepsWithIcon h3{
         font-size: 26px; 
     }
+    //threeimageblock
     .threeimageblock h5{
         font-size: 15px;
     }
     .threeimageblock h3{
         font-size: 20px;
     }
-
 }
 
 @media (max-width: 767px)
@@ -404,6 +405,7 @@ a:hover {
     /*.container {
         max-width: 325px;
     }*/
+    //top bar
     .topbar ul {
       text-align: center;
       color: #ffffff;
@@ -411,6 +413,7 @@ a:hover {
     .topbar ul li active {
         text-decoration: underline;
     }
+    //banner
     .banner h1 {
         font-size: 26px;
         line-height: 46px;  
@@ -423,6 +426,7 @@ a:hover {
         font-size: 26px; 
         line-height: 40px; 
     }
+    //imgandtext
     .imgandtext {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -434,15 +438,24 @@ a:hover {
     .StepsWithIcon h3{
         font-size: 16px; 
     }
-    // ThreeImageBlock
     .StepsWithIcon h3{
         font-size: 16px; 
     }
-    .threeimageblock h5{
+    // ThreeImageBlock
+  .threeimageblock h5{
         font-size: 15px;
     }
     .threeimageblock h3{
         font-size: 16px;
+    }
+
+    /** Non profit Landing Page CSS **/
+    .hcprocess h3{
+        color: var(--black);
+        text-align: center !important;
+        font-size: 36px !important; 
+        font-weight: 500 !important;
+        line-height: 50px !important;
     }
 
 }

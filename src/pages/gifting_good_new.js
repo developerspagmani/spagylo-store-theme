@@ -3,12 +3,8 @@ import ContactFormNew from "../components/ContactFormNew"
 import TopBarNew from "../components/Header/topBarNew"
 import Banner from "../components/Banner"
 import Logo from "../components/Logo"
-import ImageAndTextBlock from "../components/ImageAndTextBlock"
-import StepsWithIcon from "../components/StepsWithIcon"
-import ThreeImageBlock from "../components/ThreeImageBlock"
-import NumberIconBlock from "../components/NumberIconBlock"
-import TextAndImageBlock from "../components/TextAndImageBlock"
-import TextAndFormBlock from "../components/TextAndFormBlock"
+import HolidayCardProcessBlock from "../components/HolidayCardProcessBlock"
+import items from "../data/banner_data.json"
 
 export async function getStaticProps() {
   return {
@@ -26,13 +22,9 @@ export default function Home1() {
       <>  
         <TopBarNew/>
         <Logo/>
-          <Banner/> 
-        <ImageAndTextBlock/> 
-        <StepsWithIcon/>
-        <ThreeImageBlock/>  
-        <NumberIconBlock/>
-        <TextAndImageBlock/>
-        <TextAndFormBlock/>
+        <Banner items={items}/> 
+        <HolidayCardProcessBlock/>
+        
       </>
     )
 }

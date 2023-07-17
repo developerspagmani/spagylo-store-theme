@@ -2,6 +2,9 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap"
 import ContactFormNew from "../components/ContactFormNew"
 import TopBarNew from "../components/Header/topBarNew"
 import Logo from "../components/Logo"
+import Banner from "../components/Banner"
+import items from "../data/non-profit_banner_data.json"
+import HolidayCardProcessBlock from "../components/HolidayCardProcessBlock"
 
 export async function getStaticProps() {
   return {
@@ -23,6 +26,8 @@ export default function Home1() {
       <>
        <TopBarNew/> 
        <Logo/>
+       <Banner items={items}/> 
+       <HolidayCardProcessBlock/>
        {/* <section className=" pb-5 bg-white-100" >
             <Container>
                 <Row>

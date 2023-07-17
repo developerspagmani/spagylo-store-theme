@@ -1,7 +1,7 @@
 import { Row, Col, Container, Button } from "react-bootstrap"
-import items from "../data/banner_data.json"
 
-export default function Banner({ review }) {
+
+export default function Banner({ items }) {
   return (
     <section className="Banner">
       <div className="bg_paper">
@@ -12,12 +12,12 @@ export default function Banner({ review }) {
                 <h4>{items.subtitle}</h4>
                 <h1>{items.heading}</h1>
                 <p>{items.description}</p>
-                <a href="/">Request a demo</a>
+                <a href="/">{items.button}</a>
               </div>
             </Col>
             <Col lg="6" md="6" xs="12">
               <div className="banner">
-                <img className="w-100" src="/img/Cards.png" alt="image" />
+                <img className="w-100" src={items.image} alt="image" />
               </div>
             </Col>
           </Row>
