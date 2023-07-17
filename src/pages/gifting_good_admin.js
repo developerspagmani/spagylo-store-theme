@@ -1,5 +1,3 @@
-import { Container, Row, Col, Button, Card } from "react-bootstrap"
-import ContactFormNew from "../components/ContactFormNew"
 import TopBarNew from "../components/Header/topBarNew"
 import Banner from "../components/Banner"
 import Logo from "../components/Logo"
@@ -11,27 +9,27 @@ import TextAndImageBlock from "../components/TextAndImageBlock"
 import TextAndFormBlock from "../components/TextAndFormBlock"
 
 export async function getStaticProps() {
-  return {
-    props: {
-      nav: {
-        light: true,
+    return {
+      props: {
+        nav: {
+          light: true,
+        },
+        title: "Gifting-Good-Admin",
       },
-      title: "Homepage",
-    },
-  }
+    }
 }
 
-export default function Home1() {
-    return (
-      <>  
-        <Logo/>
-          <Banner/> 
-        <ImageAndTextBlock/> 
-        <StepsWithIcon/>
-        <ThreeImageBlock/>  
-        <NumberIconBlock/>
-        <TextAndImageBlock/>
-        <TextAndFormBlock/>
-      </>
+export default function GiftingGoodAdmin(){
+    return(
+        <>
+            <Logo/>
+            <Banner/> 
+            <ImageAndTextBlock/> 
+            <StepsWithIcon/>
+            <ThreeImageBlock/>  
+            <NumberIconBlock/>
+            <TextAndImageBlock/>
+            <TextAndFormBlock/>
+        </>
     )
 }
