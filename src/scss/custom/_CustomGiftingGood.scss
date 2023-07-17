@@ -485,9 +485,7 @@ a:hover {
         padding: 10px 25px 10px 25px
     }
     .centerbutton {
-       
         text-align: center;
-      
     }
     .centerbutton a {
       display: inline-block;
@@ -495,6 +493,54 @@ a:hover {
     .help_bgimage {
         padding: 92px 0px;
         background: var(--GG_Grey_Light);
-    
     }
+    //text and logo block
+    .textandlogo_content{
+        padding-right: 100px;
+    }
+    .textandlogo_content h2{
+        color: var(--black);
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+    }
+    .textandlogo_content p{
+        color: var(--GG_Grey_Dark);
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+    .link {
+        color: var(--GG_Orange) !important;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px; 
+        text-transform: uppercase;
+        padding-right: 15px;
+    }
+    .logoimage img{
+        display: block;
+        margin: auto;
+        padding: 40px 0px;
+    }
+    .logoimage h3{
+        color: var(--black);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px;
+        padding-bottom: 40px;
+    }
+    .textandlogo_bgimage {
+        padding: 40px 0px;
+        background: var(--GG_Grey_Light);
+    }
+
+
 
