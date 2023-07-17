@@ -13,11 +13,11 @@
     line-height: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    background: var(--gg-orange);
-    color: var(--gg-white);
+    background: var( --GG_Orange);
+    color: var(--white);
     padding: 10px 25px;
     display: block;
-    max-width: 187px;
+    max-width: 200px;
 }
 
 a {
@@ -448,15 +448,32 @@ a:hover {
     .threeimageblock h3{
         font-size: 16px;
     }
+}
 
     /** Non profit Landing Page CSS **/
+    //holiday card process block
     .holidaycardprocess h3{
+        color: var(--black);
         text-align: center;
-        font-size: 16px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px;
+        padding-bottom: 60px;
+    }
+    .process_content{
+        display: block;
+        margin: auto;
     }
     .help_heading{
+        color: var(--black);
         text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px; 
+        padding-bottom: 40px;
+       
     }
+
     .help_heading a {
         background-color: var(--GG_Orange);
         color: var(--white);
@@ -467,5 +484,17 @@ a:hover {
         text-transform: uppercase;
         padding: 10px 25px 10px 25px
     }
+    .centerbutton {
+       
+        text-align: center;
+      
+    }
+    .centerbutton a {
+      display: inline-block;
+    }
+    .help_bgimage {
+        padding: 92px 0px;
+        background: var(--GG_Grey_Light);
+    
+    }
 
-}

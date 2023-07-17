@@ -2,53 +2,45 @@ import { Row, Col, Container, Button } from "react-bootstrap"
 
 export default function HolidayCardProcessBlock({ items }) {
   return (
-    <section>
+    <section className="HolidayCardprocess">
       <Container>
         <div className="holidaycardprocess">
-            <h3>We Make it Easy for You</h3>
+          <h3>We Make it Easy for You</h3>
         </div>
         <Row>
           <Col lg="2">
-            <div>
+            <div className="process_content">
               <img src="/img/Vector 5.png"></img>
               <p> Select a Card Design</p>
               <img src="/img/Icon1.png"></img>
             </div>
           </Col>
           <Col lg="2">
-            <div className="p-4">
-              <img src="/img/Vector 5.png" className="px-6 pb-4"></img>
-              <p className=" px-3 pb-4 h6 text-center">
-                 Write a Personal Message
-              </p>
-              <img src="/img/Icon_2.png" className="px-5"></img>
+            <div>
+              <img src="/img/Vector 5.png"></img>
+              <p> Write a Personal Message</p>
+              <img src="/img/Icon_2.png"></img>
             </div>
           </Col>
           <Col lg="2">
-            <div className="p-4">
-              <img src="/img/Vector 6.png" className="px-6 pb-4"></img>
-              <p className=" px-4 pb-5 h6 text-center">
-                Upload Your Recipients’ Info
-              </p>
-              <img src="/img/Icon _3.png" className="px-5"></img>
+            <div>
+              <img src="/img/Vector 6.png"></img>
+              <p>Upload Your Recipients’ Info</p>
+              <img src="/img/Icon _3.png"></img>
             </div>
           </Col>
           <Col lg="2">
-            <div className="p-4">
-              <img src="/img/Vector 7.png " className="px-6 pb-4"></img>
-              <p className=" px-3 pb-4 h6 text-center">
-                 Choose Your Donation Amount
-              </p>
-              <img src="/img/Icon 4.png" className="px-5"></img>
+            <div>
+              <img src="/img/Vector 7.png "></img>
+              <p> Choose Your Donation Amount</p>
+              <img src="/img/Icon 4.png"></img>
             </div>
           </Col>
           <Col lg="2">
-            <div className="p-4">
-              <img src="/img/Ellipse 4.png" className="px-6 pb-4"></img>
-              <p className=" px-2 pb-4 h6 text-center">
-                We’ll Print and Mail Your Cards for You
-              </p>
-              <img src="/img/Icon 5.png" className="px-5"></img>
+            <div>
+              <img src="/img/Ellipse 4.png"></img>
+              <p>We’ll Print and Mail Your Cards for You</p>
+              <img src="/img/Icon 5.png"></img>
             </div>
           </Col>
         </Row>
