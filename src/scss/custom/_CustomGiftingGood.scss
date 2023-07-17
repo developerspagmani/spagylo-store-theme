@@ -450,12 +450,22 @@ a:hover {
     }
 
     /** Non profit Landing Page CSS **/
-    .hcprocess h3{
-        color: var(--black);
-        text-align: center !important;
-        font-size: 36px !important; 
-        font-weight: 500 !important;
-        line-height: 50px !important;
+    .holidaycardprocess h3{
+        text-align: center;
+        font-size: 16px;
+    }
+    .help_heading{
+        text-align: center;
+    }
+    .help_heading a {
+        background-color: var(--GG_Orange);
+        color: var(--white);
+        font-size:16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px 25px 10px 25px
     }
 
 }

@@ -26,8 +26,8 @@ export default function Home1() {
       <>
       {/* Top Bar */}
         
-                <TopBarNew/>
-                <Logo/>
+                {/* <TopBarNew/> */}
+                {/* <Logo/> */}
                  <Banner/> 
                 <ImageAndTextBlock/> 
                 <StepsWithIcon/>

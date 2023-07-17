@@ -2,15 +2,17 @@ import { Row, Col, Container, Button } from "react-bootstrap"
 
 export default function HolidayCardProcessBlock({ items }) {
   return (
-    <section className="HolidayCardProcessBlock">
+    <section>
       <Container>
-        <h3 className="hcprocess"> We Make it Easy for You</h3>
+        <div className="holidaycardprocess">
+            <h3>We Make it Easy for You</h3>
+        </div>
         <Row>
           <Col lg="2">
-            <div className="p-3">
-              <img src="/img/Vector 5.png" className="px-6  pb-4"></img>
-              <p className=" px-3 pb-4 h6 text-center"> Select a Card Design</p>
-              <img src="/img/Icon1.png" className="px-5"></img>
+            <div>
+              <img src="/img/Vector 5.png"></img>
+              <p> Select a Card Design</p>
+              <img src="/img/Icon1.png"></img>
             </div>
           </Col>
           <Col lg="2">

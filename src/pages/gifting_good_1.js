@@ -5,6 +5,8 @@ import Logo from "../components/Logo"
 import Banner from "../components/Banner"
 import items from "../data/non-profit_banner_data.json"
 import HolidayCardProcessBlock from "../components/HolidayCardProcessBlock"
+import HelpBlock from "../components/HelpBlock"
+import TextAndLogo from "../components/TextAndLogo"
 
 export async function getStaticProps() {
   return {
@@ -21,13 +23,15 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home1() {
+export default function Home() {
     return (
       <>
        <TopBarNew/> 
        <Logo/>
        <Banner items={items}/> 
        <HolidayCardProcessBlock/>
+       <HelpBlock/>
+       <TextAndLogo/>
        {/* <section className=" pb-5 bg-white-100" >
             <Container>
                 <Row>
