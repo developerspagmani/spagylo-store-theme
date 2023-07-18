@@ -25,17 +25,16 @@ export default function TextAndLogo({ review }) {
             </div>
           </Col>
           <Col lg="6" md="6" xs="12">
-          <img src="/img/paper_top.png" class="paper_top" alt="paper-top" />
+          {/* <img src="/img/paper_top.png" class="paper_top" alt="paper-top" /> */}
           {/* <img src = "/img/paper_left.svg"></img> */}
           {/* <img src = "/img/paper_right.svg"></img> */}
           <div className="textandlogo_bgimage">
             <div className="logoimage">
               <img src="/img/God's Love_logo.png" />
-              <h3>Donate to God's Love We Deliver</h3>
-              <a href="#">donate now</a>
+              <h3>Donate to God's Love<br/> We Deliver</h3>
+              <div className="centerbutton"><a href="#" className="primary_btn"> donate now</a></div>
             </div>
             </div>
-            <img src="/img/paper_bottom.png" class="paper_bottom" alt="paper-bottom"></img>
           </Col>
         </Row>
       </Container>
