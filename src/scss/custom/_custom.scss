@@ -1,11 +1,11 @@
 @media (min-width: 1400px){
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1124px;
+        max-width: 1440px;
     }
 }
 @media (min-width: 1200px){
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1100px;
+        max-width: 1200px;
     }
 }
 body{
@@ -314,5 +314,18 @@ nav.bg-hover-white{
     .footerSection .footerSubTitle{
         font-size: 16px;
     }
-
+    .create_column {
+        padding-bottom: 40px;
+    }
+    .icons {
+        padding-bottom: 40px;
+    }
+    .imgandtext h2 {
+        font-size: 34px;
+        line-height: 40px;
+        padding-top: 40px;
+    }
+    div#num_icon {
+        padding-bottom: 30px;
+    }
 }

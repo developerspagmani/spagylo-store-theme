@@ -10,15 +10,15 @@ export default function NumberIconBlock({ review }) {
     <Container>
       <h3>How it Works for Supporters</h3>       
       <Row className="numbericonblock_space">
-        <Col xl="4" lg="4" md="4" xs="12" >
+        <Col xl="4" lg="4" md="4" xs="12" id="num_icon">
           <img src="/img/step_1.svg" alt ="one"></img>
           <p>Supporters select a card design, write a personal message and choose a donation amount</p>
         </Col>
-        <Col xl="4" lg="4" md="4" xs="12" className="space">       
+        <Col xl="4" lg="4" md="4" xs="12" id="num_icon" className="space">       
                   <img src="/img/step2.svg"alt="two"></img>   
           <p>They upload the names and addresses of the people they want to receive cards</p>     
         </Col>
-        <Col xl="4" lg="4" md="4" xs="12">     
+        <Col xl="4" lg="4" md="4" xs="12" id="num_icon">     
           <img src = "/img/step_3.svg" alt="three"></img>
           <p>Cards are sent automatically. No addressing, stamping, or trips to the post office necessary.</p>
         </Col>

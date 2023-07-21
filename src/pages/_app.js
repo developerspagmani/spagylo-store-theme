@@ -5,6 +5,7 @@ import "../../public/fonts/hkgrotesk/stylesheet.css"
 import "../scss/style.default.scss"
 import "../scss/custom/_CustomGiftingGood.scss"
 import "../scss/custom/_custom.scss"
+import "../scss/custom/_customstyleHarish.scss"
 
 
 const App = ({ Component, pageProps }) => {

@@ -1,0 +1,376 @@
+body {
+    width: 100%;
+}
+
+//// Banner Start////
+.banner_bg {
+    display: flex;
+    background-color: #E3EEFD;
+    height: 750px;
+}
+
+.banner_circle_img {
+    border-radius: 50%;
+    padding-top: 46.5px;
+    padding-bottom: 55.6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner_bold_title {
+    padding-top: 245px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.banner_bold_title h3 {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.banner_bold_title p {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #F46800;
+    font-family: Poppins;
+}
+
+.button_local {
+    padding-top: 40px;
+}
+
+.banner_bold_title a {
+    border-radius: 30px;
+    background: #142C73;
+    color: #FFF;
+    font-family: HK Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 14px 47px 14px 25px;
+}
+
+svg.arrow-left {
+    margin-left: 20px;
+    padding-left: -10px;
+    vertical-align: initial;
+}
+
+
+///// Banner End/////
+
+///////// Top Products /////////////
+.top_products {
+    margin-top: 60px;
+}
+
+.hypso_top_products_title {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    padding-bottom: 40px;
+}
+
+.card-title {
+    color: #000;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-price {
+    color: #6F6F6F;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card.hypso-card-border {
+    background-color: #f7f7f7;
+}
+
+.hypso-top-card {
+    column-gap: 30px;
+}
+
+.hypso-card-border {
+    border: none;
+}
+
+.hypso-card-img-top {
+    background: #f7f7f7;
+    padding-top: 33px;
+    // padding-bottom: 70px;
+}
+
+.hypso-collections-total {
+    padding-top: 60px;
+}
+
+.hypso-collections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.collection-title h3 {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.poster-women {
+    position: relative;
+}
+
+.collection-about-text-women h3 {
+    position: absolute;
+    padding: 6px 150px 51px 79px;
+    color: #fff;
+    font-family: HK Grotesk;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    bottom: 64px;
+}
+
+.poster-men {
+    position: relative;
+}
+
+.collection-about-text-men h3 {
+    position: absolute;
+    padding: 6px 150px 51px 79px;
+    color: #fff;
+    font-family: HK Grotesk;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    bottom: 64px;
+}
+
+img.hypso-men-banner {
+    width: 100%;
+}
+
+img.hypso-women-banner {
+    width: 100%;
+}
+
+///////// Hypso collections End /////////////
+
+
+
+///////// Buy sell product poster Start /////////////
+.poster_men_women {
+    margin-top: 120px;
+}
+
+.hypso-banner-middle {
+    background-color: rgba(232, 199, 175, 0.49);
+}
+
+.buy-sell-title h3 {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.buy-sell-title p {
+    color: #F46800;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hypso-style-men {
+    position: relative;
+}
+
+.hypso-banner-middle {
+    background-color: rgba(232, 199, 175, 0.49);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+img.hypso-men-banner {
+    // position: absolute;
+    // width: 340px;
+}
+
+.poster_container {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+.left_img {
+    width: 27.5%;
+}
+
+.heading_wrapper {
+    width: 49%;
+    position: absolute;
+    left: 33%;
+    top: 8%;
+    transform: translate(0, 50%);
+    z-index: 2;
+}
+
+.right_img {
+    width: 32%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+///////// Buy sell product poster End /////////////
+.col-22 {
+    flex: 0 0 auto;
+    width: 30.333333%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.pt-11 {
+    padding-top: 11px;
+}
+
+.local_spl_title {
+    margin-top: 80px;
+}
+
+.local_spl_title h3 {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    padding-bottom: 50px;
+}
+
+img.local-product-head {
+    width: 100%;
+}
+
+.local_spl_product_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+img.local-product-head {
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.local-description {
+    color: #000;
+    font-family: HK Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.b-none {
+    border: none;
+}
+
+// .local-head-img {
+//     position: relative;
+// }
+
+// .text-over-local-img {
+//     position: absolute;
+//     top: 65px;
+// }
+
+.text-over-local-img h3 {
+    color: #fff;
+    font-family: HK Grotesk;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* letter-spacing: 1.05px; */
+    position: absolute;
+    top: 11px;
+    padding: 43px 20px 0px 40px;
+}
+
+.text-over-local-img a {
+    position: absolute;
+    top: 175px;
+    left: 40px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 30px;
+    background: #A6D3CF;
+    padding: 12px 25px;
+}
+
+.col-lg-33.local-head-img {
+    position: relative;
+}
+
+.col-lg-33 {
+    flex: 0 0 auto;
+    width: 37.666667%;
+}
+
+.col-lg-34 {
+    flex: 0 0 auto;
+    width: 61.333333%;
+}
+
+
+
+//////////////// Responsive Start //////////////////
+
+

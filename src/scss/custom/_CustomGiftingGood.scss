@@ -210,6 +210,8 @@ a:hover {
 .paper_top{
     width: 100%;
     background: var(--GG_Grey_Light);
+    position: relative;
+    top: 5px;
 }
 // threeImageBlock
 .threeimageblock h3{
@@ -285,6 +287,8 @@ a:hover {
 .paper_bottom {
     width: 100%;
     background: var(--GG_Grey_Light);
+    position: relative;
+    bottom: 5px;
 }
 
 .numbericon_fluid {
@@ -497,12 +501,12 @@ a:hover {
     }*/
     //banner
     .banner h1 {
-        font-size: 36px;
+        font-size: 56px;
         line-height: 46px;
     }
     //imgandtext
     .imgandtext h2{
-        font-size: 28px; 
+        font-size: 48px; 
         line-height: 40px; 
     }
     .imgandtext_content{
@@ -510,14 +514,14 @@ a:hover {
     }
       // StepsWithIcon
     .StepsWithIcon h3{
-        font-size: 26px; 
+        font-size: 34px; 
     }
     //threeimageblock
     .threeimageblock h5{
         font-size: 15px;
     }
     .threeimageblock h3{
-        font-size: 20px;
+        font-size: 36px;
     }
 
     .holidaycardprocess h3 {
@@ -526,21 +530,23 @@ a:hover {
     .colspace{
         padding-top: 0px;
     }
+
+  
 }
 @media (max-width: 767px)
 {
-    /*.container {
-        max-width: 670px;
-    }*/
+    .textandimage_content a {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 576px)
 {
-    /*.container {
-        max-width: 325px;
-    }*/
-    //top bar
+    .numbericon_fluid {
+        padding: 0px 0px;
+        background: var(--GG_Grey_Light);
+    }
     .topbar ul {
-      text-align: center;
+      text-align: right;
       color: #ffffff;
     }
     .topbar ul li active {
@@ -548,7 +554,7 @@ a:hover {
     }
     //banner
     .banner h1 {
-        font-size: 26px;
+        font-size: 34px;
         line-height: 46px;  
     }
     .banner img {
@@ -556,7 +562,7 @@ a:hover {
     }
 
     .imgandtext h2{
-        font-size: 26px; 
+        font-size: 48px; 
         line-height: 40px; 
     }
     //imgandtext
@@ -569,17 +575,37 @@ a:hover {
     }
    // StepsWithIcon
     .StepsWithIcon h3{
-        font-size: 16px; 
+        font-size: 34px; 
     }
     .StepsWithIcon h3{
-        font-size: 16px; 
+        font-size: 34px; 
     }
     // ThreeImageBlock
   .threeimageblock h5{
         font-size: 15px;
     }
     .threeimageblock h3{
-        font-size: 16px;
+        font-size: 36px;
+    }
+    .imgandtext_image {
+        padding-right: 0px;
+    }
+    .threeimageblock h3 {
+        color: var(--black);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px;
+        margin-top: 150px;
+        margin-bottom: 0px;
+    }
+    .textandimage_content h2 {
+        color: var(--black);
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 60px;
+        text-transform: capitalize;
+        padding-bottom: 0px;
     }
 }
     
