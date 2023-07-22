@@ -11,12 +11,12 @@ export default function ProductListBlock() {
           <div className="banner_bg">
             <Container>
               <Row>
-                <div className="col-lg-6">
+                <div className="col-lg-6 banner-image">
                   <div className="banner_circle_img">
                     <img src="/img/Mask group.png" class="banner_circle" alt="paper-top" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 banner-head-main">
                   <div className="banner_bold_title">
                     <h3>BUY PRODUCTS ON HYPSO</h3>
                     <p>FROM YOUR LOCAL STORES</p>
@@ -93,9 +93,9 @@ export default function ProductListBlock() {
                       <img src="/img/women-collection.png" class="hypso-women-collection " alt="..." />
                     </div>
                     <div className="collection-about-text-women">
-                      <h3>Women’s
-                        Collection
-                        &
+                      <h3>Women’s <br/>
+                        Collection<br/>
+                        &<br/>
                         Accessories</h3>
                     </div>
                   </div>
@@ -104,12 +104,12 @@ export default function ProductListBlock() {
                 <div className="col-lg-6">
                   <div className="poster-men">
                     <div className="men-collect-hypso">
-                      <img src="/img/Mask group (1).png" class="hypso-women-collection" alt="..." />
+                      <img src="/img/Mask group (1).png" class="hypso-men-collection" alt="..." />
                     </div>
                     <div className="collection-about-text-men">
-                      <h3>men’s
-                        Collection
-                        &
+                      <h3>men’s<br/>
+                        Collection<br/>
+                        &<br/>
                         Accessories</h3>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ export default function ProductListBlock() {
                 </div>
                 <div className="heading_wrapper">
                   <div className="buy-sell-title">
-                    <h3>BUY & SELL PRODUCTS ON HYPSO</h3>
+                    <h3>BUY & SELL PRODUCTS ON <span className="hypso-blue">HYPSO</span></h3>
                     <p>FROM YOUR LOCAL STORES</p>
 
                   </div>
@@ -155,7 +155,7 @@ export default function ProductListBlock() {
                 {/* <div className="local-head-img"> */}
                 <img src="/img/jug-coconut-oil-whit-coconut-put-dark-background 1.png" class="local-product-head" alt="..." />
                 <div className="text-over-local-img">
-                  <h3>HYPSO LOCAL SPECIAL PRODUCTS</h3>
+                  <h3>HYPSO LOCAL SPECIAL <br/> PRODUCTS</h3>
                   <a href="#">SHOP LOCAL</a>
                 </div>
 
@@ -205,7 +205,7 @@ export default function ProductListBlock() {
                 </div>
               </div>
 
-            </Row>
+            </Row>  
           </Container>
         </div>
 

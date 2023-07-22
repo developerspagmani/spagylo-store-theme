@@ -6,7 +6,8 @@ body {
 .banner_bg {
     display: flex;
     background-color: #E3EEFD;
-    height: 750px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .banner_circle_img {
@@ -31,6 +32,7 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    // text-align: center;
 }
 
 .banner_bold_title p {
@@ -145,7 +147,6 @@ svg.arrow-left {
 
 .collection-about-text-women h3 {
     position: absolute;
-    padding: 6px 150px 51px 79px;
     color: #fff;
     font-family: HK Grotesk;
     font-size: 50px;
@@ -154,7 +155,8 @@ svg.arrow-left {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    bottom: 64px;
+    bottom: 110px;
+    left: 75px;
 }
 
 .poster-men {
@@ -163,7 +165,6 @@ svg.arrow-left {
 
 .collection-about-text-men h3 {
     position: absolute;
-    padding: 6px 150px 51px 79px;
     color: #fff;
     font-family: HK Grotesk;
     font-size: 50px;
@@ -172,7 +173,8 @@ svg.arrow-left {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    bottom: 64px;
+    bottom: 80px;
+    left: 80px;
 }
 
 img.hypso-men-banner {
@@ -197,7 +199,7 @@ img.hypso-women-banner {
 }
 
 .buy-sell-title h3 {
-    color: #142C73;
+    color: #000;
     font-family: HK Grotesk;
     font-size: 55px;
     font-style: normal;
@@ -275,6 +277,15 @@ p {
     margin-top: 80px;
 }
 
+.hypso-blue {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 .local_spl_title h3 {
     color: #142C73;
     font-family: HK Grotesk;
@@ -283,7 +294,7 @@ p {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.8px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 img.local-product-head {
@@ -337,13 +348,13 @@ img.local-product-head {
     /* letter-spacing: 1.05px; */
     position: absolute;
     top: 11px;
-    padding: 43px 20px 0px 40px;
+    padding: 50px 20px 0px 30px;
 }
 
 .text-over-local-img a {
     position: absolute;
-    top: 175px;
-    left: 40px;
+    top: 200px;
+    left: 30px;
     color: #FFF;
     font-family: Poppins;
     font-size: 18px;
@@ -373,4 +384,788 @@ img.local-product-head {
 
 //////////////// Responsive Start //////////////////
 
+@media (min-width: 576px) {
 
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .banner_circle_img {
+        width: 100%;
+        display: flex;
+    }
+
+    .banner_bold_title {
+        display: flex;
+    }
+
+    .banner_bg {
+        display: flex;
+        background-color: #E3EEFD;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .banner_bold_title {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .women-collect-hypso {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* row-gap: 40%; */
+    }
+
+    .men-collect-hypso {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* row-gap: 40%; */
+    }
+
+    .collection-about-text-women h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 29%;
+        left: 28%;
+    }
+
+    .collection-about-text-men h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 18%;
+        left: 28%;
+    }
+
+    img.hypso-women-collection {
+        padding-bottom: 60px;
+    }
+
+    img.hypso-women-banner {
+        width: 100%;
+    }
+
+    .poster_men_women {
+        margin-top: 120px;
+        position: relative;
+    }
+
+    // .buy-sell-title {
+    //     position: absolute;
+    //     top: 0;
+    // }
+
+    .buy-sell-title {
+        position: absolute;
+        top: 25px;
+        width: 77%;
+    }
+
+    .col-lg-33 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-lg-34 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    img.local-product-head {
+        width: 100%;
+        padding-bottom: 60px;
+        padding: 30px;
+    }
+
+    .col-22 {
+        flex: 0 0 auto;
+        width: 30.9999999%;
+    }
+
+    .col-lg-34 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .text-over-local-img h3 {
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+    }
+
+    .text-over-local-img a {
+        position: absolute;
+        top: 36%;
+        left: 10%;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 30px;
+        background: #A6D3CF;
+        padding: 20px 70px;
+    }
+}
+
+
+//**//**//**//**//**//**//**//**//** For Tab View //**//**//**//**//**//**//**//**//**//**
+@media (max-width: 992px) {
+    .collection-about-text-women h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 29%;
+        left: 20%;
+    }
+
+    .collection-about-text-men h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 20%;
+        left: 20%;
+    }
+
+    img.hypso-women-collection {
+        padding-bottom: 60px;
+    }
+
+    .poster_men_women {
+        margin-top: 120px;
+        position: relative;
+    }
+
+    .buy-sell-title {
+        position: absolute;
+        top: 0;
+    }
+
+    .buy-sell-title {
+        position: absolute;
+        top: 10px;
+        width: 60%;
+    }
+
+    .buy-sell-title h3 {
+        color: #000;
+        font-family: HK Grotesk;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-blue {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .buy-sell-title p {
+        color: #F46800;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .col-22 {
+        flex: 0 0 auto;
+        width: 29%;
+    }
+
+    .text-over-local-img h3 {
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        position: absolute;
+        top: 7%;
+        left: 7%;
+    }
+
+    .text-over-local-img a {
+        position: absolute;
+        top: 34%;
+        left: 10%;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 30px;
+        background: #A6D3CF;
+        padding: 20px 57px;
+    }
+}
+
+
+//**//**//**//**//**//**//**//**//** For Tab View //**//**//**//**//**//**//**//**//**//**
+@media (max-width: 768px) {
+    .col-lg-33 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-lg-34 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-22 {
+        flex: 0 0 auto;
+        width: 28%;
+    }
+
+    .collection-about-text-women h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 47%;
+        left: 22%;
+    }
+
+    .collection-about-text-men h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 35%;
+        left: 14%;
+    }
+
+    img.banner_circle {
+        width: 100%;
+    }
+
+    img.hypso-women-collection {
+        width: 100%;
+    }
+
+    img.hypso-men-collection {
+        width: 100%;
+    }
+
+    .buy-sell-title h3 {
+        color: #000;
+        font-family: HK Grotesk;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-blue{
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-banner-middle {
+        background-color: rgba(232, 199, 175, 0.49);
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .banner_bold_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .text-over-local-img h3 {
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .text-over-local-img a {
+        position: absolute;
+        top: 35%;
+        left: 9%;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 30px;
+        background: #A6D3CF;
+        padding: 20px 45px;
+    }
+
+    .poster_men_women {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .local_spl_title {
+        margin-top: 40px;
+    }
+
+    .local_spl_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        padding-bottom: 15px;
+    }
+}
+
+
+//**//**//**//**//**//**//**//** For Mobile View //**//**//**//**//**//**//**//**//**//**
+@media (max-width: 575.98px) {
+
+    .banner_bold_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .collection-about-text-women h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 46%;
+        left: 21%;
+    }
+
+    .collection-about-text-men h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 38%;
+        left: 14%;
+    }
+
+    .buy-sell-title {
+        position: absolute;
+        top: 20px;
+        width: 60%;
+    }
+
+    .buy-sell-title h3 {
+        color: #000;
+        font-family: HK Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-blue{
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-banner-middle {
+        background-color: rgba(232, 199, 175, 0.49);
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    .heading_wrapper {
+        width: 49%;
+        position: absolute;
+        left: 33%;
+        top: 8%;
+        transform: translate(0, 50%);
+        z-index: 2;
+    }
+
+    .buy-sell-title p {
+        color: #F46800;
+        font-family: Poppins;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    img.local-product-head {
+        width: 100%;
+        padding-bottom: 60px;
+        padding: 30px;
+    }
+
+    .col-lg-34 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-lg-33 {
+        flex: 0 0 auto;
+        width: 100%;
+        /* padding-left: 20px; */
+    }
+
+    .col-22 {
+        flex: 0 0 auto;
+        width: 27%;
+    }
+
+    .text-over-local-img h3 {
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+    }
+
+    .text-over-local-img a {
+        position: absolute;
+        top: 34%;
+        left: 12%;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 30px;
+        background: #A6D3CF;
+        padding: 10px 35px;
+    }
+
+    .local_spl_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        padding-bottom: 0px;
+    }
+
+    .local-description {
+        color: #000;
+        font-family: HK Grotesk;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .collection-title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.8px;
+    }
+
+    .py-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+//**//**//**//**//**//**//**//** For Mobile View //**//**//**//**//**//**//**//**//**
+@media (max-width: 375.98px) {
+
+    .col-22 {
+        flex: 0 0 auto;
+        width: 24%;
+    }
+
+    .text-over-local-img h3 {
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.05px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .text-over-local-img a {
+        position: absolute;
+        top: 35%;
+        left: 14%;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 30px;
+        background: #A6D3CF;
+        padding: 10px 20px;
+    }
+
+    .local_spl_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        padding-bottom: 0px;
+    }
+
+    .buy-sell-title {
+        position: absolute;
+        top: 7px;
+        width: 60%;
+    }
+
+    .buy-sell-title h3 {
+        color: #000;
+        font-family: HK Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .hypso-blue {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .buy-sell-title p {
+        color: #F46800;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .collection-about-text-women h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 45%;
+        left: 18%;
+    }
+
+    .collection-about-text-men h3 {
+        position: absolute;
+        color: #fff;
+        font-family: HK Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        bottom: 30%;
+        left: 15%;
+    }
+
+    .collection-title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.8px;
+    }
+
+    .banner_bold_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .banner_bg {
+        display: flex;
+        background-color: #E3EEFD;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .banner_bold_title h3 {
+        color: #142C73;
+        font-family: HK Grotesk;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .banner_bold_title a {
+        border-radius: 30px;
+        background: #142C73;
+        color: #FFF;
+        font-family: HK Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 14px 47px 14px 25px;
+    }
+
+    .py-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
