@@ -7,7 +7,7 @@ body {
     display: flex;
     background-color: #E3EEFD;
     height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .banner_circle_img {
@@ -59,8 +59,7 @@ body {
 }
 
 svg.arrow-left {
-    margin-left: 20px;
-    padding-left: -10px;
+    margin-left: 10px;
     vertical-align: initial;
 }
 
@@ -106,7 +105,7 @@ svg.arrow-left {
 }
 
 .hypso-top-card {
-    column-gap: 30px;
+    column-gap: 15px;
 }
 
 .hypso-card-border {
@@ -150,8 +149,16 @@ svg.arrow-left {
     position: relative;
 }
 
-.collection-about-text-women h3 {
+.collection-about-text-women {
     position: absolute;
+    top: 0;
+    transform: translate(0, 50%);
+    left: 0;
+    right: 0;
+}
+
+.collection-about-text-women h3 {
+    // position: absolute;  
     color: #fff;
     font-family: HK Grotesk;
     font-size: 50px;
@@ -160,18 +167,24 @@ svg.arrow-left {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    bottom: 105px;
-    left: 51px;
     width: 411px;
     padding: 1% 4%;
+    margin: auto;
 }
 
 .poster-men {
     position: relative;
 }
 
-.collection-about-text-men h3 {
+.collection-about-text-men {
     position: absolute;
+    top: 0;
+    transform: translate(0, 50%);
+    left: 0;
+    right: 0;
+}
+
+.collection-about-text-men h3 {
     color: #fff;
     font-family: HK Grotesk;
     font-size: 50px;
@@ -180,10 +193,9 @@ svg.arrow-left {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    bottom: 115px;
-    left: 58px;
     padding: 1% 4%;
     width: 411px;
+    margin: auto;
 }
 
 img.hypso-men-banner {
@@ -445,7 +457,7 @@ img.local-product-head {
         display: flex;
         background-color: #E3EEFD;
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
 
     .banner_bold_title {
@@ -475,8 +487,15 @@ img.local-product-head {
         /* row-gap: 40%; */
     }
 
-    .collection-about-text-women h3 {
+    .collection-about-text-women {
         position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
+    }
+
+    .collection-about-text-women h3 {
         color: #fff;
         font-family: HK Grotesk;
         font-size: 50px;
@@ -485,24 +504,22 @@ img.local-product-head {
         line-height: normal;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        bottom: 28%;
-        left: 24%;
         width: 411px;
+        margin: auto;
+    }
+
+    .collection-about-text-men {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
     }
 
     .collection-about-text-men h3 {
-        position: absolute;
-        color: #fff;
-        font-family: HK Grotesk;
         font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 20%;
-        left: 24%;
         width: 411px;
+        margin: auto;
     }
 
     img.hypso-women-collection {
@@ -517,11 +534,6 @@ img.local-product-head {
         margin-top: 120px;
         position: relative;
     }
-
-    // .buy-sell-title {
-    //     position: absolute;
-    //     top: 0;
-    // }
 
     .buy-sell-title {
         position: absolute;
@@ -586,35 +598,36 @@ img.local-product-head {
 
 
 //**//**//**//**//**//**//**//**//** For Tab View //**//**//**//**//**//**//**//**//**//**
+
 @media (max-width: 992px) {
-    .collection-about-text-women h3 {
+
+    .collection-about-text-women {
         position: absolute;
-        color: #fff;
-        font-family: HK Grotesk;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
+    }
+
+
+    .collection-about-text-women h3 {
         font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 28%;
-        left: 16%;
         width: 411px;
+        margin: auto;
+    }
+
+    .collection-about-text-men {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
     }
 
     .collection-about-text-men h3 {
-        position: absolute;
-        color: #fff;
-        font-family: HK Grotesk;
         font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 20%;
-        left: 16%;
         width: 411px;
+        margin: auto;
     }
 
     img.hypso-women-collection {
@@ -716,36 +729,34 @@ img.local-product-head {
         width: 28%;
     }
 
-    .collection-about-text-women h3 {
+    .collection-about-text-women {
         position: absolute;
-        color: #fff;
-        font-family: HK Grotesk;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
+    }
+
+    .collection-about-text-women h3 {
         font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 35%;
-        left: 15%;
-        width: 211px;
-        padding: 1% 1% 1% 2%;
+        width: 411px;
+        padding: 1% 9% 1% 2%;
+        margin: auto;
+    }
+
+    .collection-about-text-men {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
     }
 
     .collection-about-text-men h3 {
-        position: absolute;
-        color: #fff;
-        font-family: HK Grotesk;
         font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 25%;
-        left: 12%;
-        width: 211px;
-        padding: 1% 1% 1% 2%;
+        width: 411px;
+        padding: 1% 5% 1% 2%;
+        margin: auto;
     }
 
     img.banner_circle {
@@ -857,34 +868,35 @@ img.local-product-head {
         text-align: center;
     }
 
-    .collection-about-text-women h3 {
+    .collection-about-text-women {
         position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
+    }
+
+    .collection-about-text-women h3 {
         color: #fff;
-        font-family: HK Grotesk;
         font-size: 35px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 40%;
-        left: 18%;
-        width: 190px;
+        margin: auto;
+        width: 211px;
+    }
+
+    .collection-about-text-men {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
     }
 
     .collection-about-text-men h3 {
-        position: absolute;
         color: #fff;
         font-family: HK Grotesk;
         font-size: 35px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 25%;
-        left: 12%;
-        width: 190px;
+        margin: auto;
+        width: 211px;
     }
 
     .buy-sell-title {
@@ -1102,34 +1114,38 @@ img.local-product-head {
         line-height: normal;
     }
 
-    .collection-about-text-women h3 {
+    .collection-about-text-women {
         position: absolute;
+        top: 0;
+        transform: translate(0, 50%);
+        left: 0;
+        right: 0;
+    }
+
+    .collection-about-text-women h3 {
         color: #fff;
         font-family: HK Grotesk;
         font-size: 25px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 39%;
-        left: 16%;
         padding: 1% 10% 2% 1%;
+        margin: auto;
+        width: 190px;
+    }
+
+    .collection-about-text-men {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translate(0px, 50%);
     }
 
     .collection-about-text-men h3 {
-        position: absolute;
         color: #fff;
         font-family: HK Grotesk;
         font-size: 25px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        bottom: 20%;
-        left: 13%;
+        margin: auto;
         padding: 1% 10% 2% 1%;
+        width: 190px;
     }
 
     .collection-title h3 {
@@ -1156,7 +1172,7 @@ img.local-product-head {
         display: flex;
         background-color: #E3EEFD;
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
 
     .banner_bold_title h3 {
