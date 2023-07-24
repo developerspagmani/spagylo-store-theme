@@ -7,6 +7,8 @@ export default function ProductListBlock() {
     <>
       <section className="productListBlock py-6 mt-5">
 
+
+                                    {/*BANNER START */}
         <div className="banner">
           <div className="banner_bg">
             <Container>
@@ -35,8 +37,11 @@ export default function ProductListBlock() {
             </Container>
           </div>
         </div>
+                                    {/*BANNER END */}
 
 
+
+                                    {/* TOP PRODUCTS START */}
         <Container>
           <Row>
             <div className="top_products">
@@ -79,6 +84,9 @@ export default function ProductListBlock() {
             </div>
           </Row>
         </Container>
+                                    {/* TOP PRODUCTS END */}
+
+                                    {/* HYPSO COLLECTIONS START */}
         <Container>
           <Row>
             <div className="hypso-collections-total">
@@ -118,7 +126,9 @@ export default function ProductListBlock() {
             </div>
           </Row>
         </Container>
+                                    {/* HYPSO COLLECTIONS END */}
 
+                            {/* Buy & Sell products on HYPSO START*/}
         <div className="poster_men_women">
           <div className="hypso-banner-middle">
             <div className="poster_container">
@@ -142,8 +152,10 @@ export default function ProductListBlock() {
             </div>
           </div>
         </div>
+                            {/* Buy & Sell products on HYPSO END */}
 
 
+                            {/* Local Products START */}
         <div className="local_products">
           <Container>
             <div className="local_spl_title">
@@ -152,14 +164,11 @@ export default function ProductListBlock() {
             <Row>
 
               <div className="col-lg-33 local-head-img p-0">
-                {/* <div className="local-head-img"> */}
                 <img src="/img/jug-coconut-oil-whit-coconut-put-dark-background 1.png" class="local-product-head" alt="..." />
                 <div className="text-over-local-img">
-                  <h3>HYPSO LOCAL SPECIAL <br/> PRODUCTS</h3>
+                  <h3>HYPSO LOCAL SPECIAL <br /> PRODUCTS</h3>
                   <a href="#">SHOP LOCAL</a>
                 </div>
-
-                {/* </div> */}
               </div>
 
 
@@ -205,13 +214,11 @@ export default function ProductListBlock() {
                 </div>
               </div>
 
-            </Row>  
+            </Row>
           </Container>
         </div>
 
-
-
-
+                                    {/* Local Products END */}
       </section>
     </>
   )

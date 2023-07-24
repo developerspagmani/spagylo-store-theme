@@ -67,7 +67,7 @@ svg.arrow-left {
 
 ///// Banner End/////
 
-///////// Top Products /////////////
+///////// Top Products Start /////////////
 .top_products {
     margin-top: 60px;
 }
@@ -119,6 +119,11 @@ svg.arrow-left {
     // padding-bottom: 70px;
 }
 
+///////// Top Products End /////////////
+
+
+
+///////// Hypso collections End /////////////
 .hypso-collections-total {
     padding-top: 60px;
 }
@@ -263,6 +268,9 @@ img.hypso-men-banner {
 
 
 ///////// Buy sell product poster End /////////////
+
+
+////////// Local Special Start ///////////////
 .col-22 {
     flex: 0 0 auto;
     width: 30.333333%;
@@ -333,15 +341,6 @@ img.local-product-head {
     border: none;
 }
 
-// .local-head-img {
-//     position: relative;
-// }
-
-// .text-over-local-img {
-//     position: absolute;
-//     top: 65px;
-// }
-
 .text-over-local-img h3 {
     color: #fff;
     font-family: HK Grotesk;
@@ -383,6 +382,8 @@ img.local-product-head {
     flex: 0 0 auto;
     width: 61.333333%;
 }
+
+////////// Local Special End ///////////////
 
 
 
@@ -768,7 +769,7 @@ img.local-product-head {
         line-height: normal;
     }
 
-    .hypso-blue{
+    .hypso-blue {
         color: #142C73;
         font-family: HK Grotesk;
         font-size: 28px;
@@ -901,7 +902,7 @@ img.local-product-head {
         line-height: normal;
     }
 
-    .hypso-blue{
+    .hypso-blue {
         color: #142C73;
         font-family: HK Grotesk;
         font-size: 16px;
