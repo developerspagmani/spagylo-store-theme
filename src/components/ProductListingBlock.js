@@ -24,7 +24,7 @@ export default function ProductListBlock() {
                       <a href="#" className="shop_local">SHOP LOCAL
                         <svg className="arrow-left" width="16" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g id="Icon/Small/Arrow Right">
-                            <path id="Vector" d="M2.27161e-06 8.83332L12.5955 8.83332L9.40888 11.8208L10.6667 13L16 8L10.6667 3L9.40888 4.17918L12.5955 7.16668L2.41731e-06 7.16668L2.27161e-06 8.83332Z" fill="#FA6044" />
+                            <path id="Vector" d="M2.27161e-06 8.83332L12.5955 8.83332L9.40888 11.8208L10.6667 13L16 8L10.6667 3L9.40888 4.17918L12.5955 7.16668L2.41731e-06 7.16668L2.27161e-06 8.83332Z" fill="#FFF" />
                           </g>
                         </svg>
                       </a>
@@ -93,9 +93,9 @@ export default function ProductListBlock() {
                       <img src="/img/women-collection.png" class="hypso-women-collection " alt="..." />
                     </div>
                     <div className="collection-about-text-women">
-                      <h3>Women’s <br/>
-                        Collection<br/>
-                        &<br/>
+                      <h3>Women’s
+                        Collection
+                        &
                         Accessories</h3>
                     </div>
                   </div>
@@ -107,9 +107,9 @@ export default function ProductListBlock() {
                       <img src="/img/Mask group (1).png" class="hypso-men-collection" alt="..." />
                     </div>
                     <div className="collection-about-text-men">
-                      <h3>men’s<br/>
-                        Collection<br/>
-                        &<br/>
+                      <h3>men’s
+                        Collection
+                        &
                         Accessories</h3>
                     </div>
                   </div>
