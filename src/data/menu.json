@@ -4,11 +4,15 @@
     "link": "/"
   },
   {
-    "title": "Shop",
+    "title": "Dress",
     "link": "/shop"
   },
   {
-    "title": "Contact",
+    "title": "Accessories",
+    "link": "/contact"
+  },
+  {
+    "title": "Local Specials",
     "link": "/contact"
   }
 ]

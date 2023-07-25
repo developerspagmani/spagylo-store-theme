@@ -55,7 +55,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 14px 47px 14px 25px;
+    padding: 14px 25px 14px 25px;
 }
 
 svg.arrow-left {
@@ -398,6 +398,14 @@ img.local-product-head {
 ////////// Local Special End ///////////////
 
 
+.local_products {
+    margin-bottom: 130px;
+}
+
+.lcl-spl {
+    border-radius: 35px;
+    background: #A6D3CF;
+}
 
 //////////////// Responsive Start //////////////////
 
@@ -1194,7 +1202,7 @@ img.local-product-head {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 14px 47px 14px 25px;
+        padding: 14px 25px 14px 25px;
     }
 
     .py-6 {

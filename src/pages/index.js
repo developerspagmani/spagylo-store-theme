@@ -1,7 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Swiper from "../components/Swiper"
 import data from "../data/index.json"
-import ProductListBlock from "../components/ProductListingBlock"
+import BannerHome from "../components/BannerHome"
+import TopProductHome from "../components/TopProductHome"
+import HypsoCollections from "../components/HypsoCollections"
+import BuySellHypso from "../components/BuySellHypso"
+import LocalProductsHypso from "../components/LocalProductsHypso"
+import Banner from "../components/Banner"
 
 export async function getStaticProps() {
   return {
@@ -40,8 +45,12 @@ export default function Home() {
         sectionClass="mb-2 home-full-slider-wrapper"
         eager
       />*/}
-     
-      <ProductListBlock />
-    </> 
+
+      <BannerHome />
+      <TopProductHome />
+      <HypsoCollections />
+      <BuySellHypso />
+      <LocalProductsHypso />
+    </>
   )
 }

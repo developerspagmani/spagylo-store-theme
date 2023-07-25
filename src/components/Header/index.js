@@ -3,313 +3,49 @@ import React, { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Router from "next/router"
 
-import {
-  Navbar,
-  Nav,
-  NavLink,
-  Dropdown,
-  Container,
-  Badge,
-  Button,
-} from "react-bootstrap"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import UseWindowSize from "../../hooks/UseWindowSize"
-import useScrollPosition from "@react-hook/window-scroll"
-import useSize from "@react-hook/size"
-
-import ActiveLink from "../ActiveLink"
-
-import menu from "../../data/menu.json"
-
-import TopBar from "./TopBar"
-import TopBarNew from "./topBarNew"
-import FullScreenSearch from "./FullScreenSearch"
-
-import Icons from "./Icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import MegaMenu from "./MegaMenu"
-
-import Logo from "../../assets/svg/logo.svg"
-
-const Header = (props) => {
-  const [collapsed, setCollapsed] = useState(false)
-  const [searchToggle, setSearchToggle] = useState(false)
-  const [parentName, setParentName] = useState(false)
-  const [additionalNavClasses, setAdditionalNavClasses] = useState("")
-
-  const size = UseWindowSize()
-  const scrollY = useScrollPosition()
-
-  const navbarRef = useRef(null)
-  const topbarRef = useRef(null)
-  const [topbarWidth, topbarHeight] = useSize(topbarRef)
-  const [navbarWidth, navbarHeight] = useSize(navbarRef)
-
-  const onLinkClick = (parent) => {
-    size.width < 991 && setCollapsed(!collapsed)
-    setParentName(parent)
-  }
-
-  const makeNavbarSticky = () => {
-    if (props.nav.sticky !== false) {
-      if (scrollY > topbarHeight) {
-        setAdditionalNavClasses("fixed-top")
-        navbarHeight > 0 &&
-          props.headerAbsolute !== true &&
-          props.setPaddingTop(navbarHeight)
-      } else {
-        setAdditionalNavClasses("")
-        props.setPaddingTop(0)
-      }
-    } else {
-      setAdditionalNavClasses("")
-      props.setPaddingTop(0)
-    }
-  }
-
-  useEffect(() => {
-    makeNavbarSticky()
-  }, [scrollY, topbarHeight])
-
-  // highlight not only active dropdown item, but also its parent, i.e. dropdown toggle
-  const highlightDropdownParent = () => {
-    menu.map((item) => {
-      item.dropdown &&
-        item.dropdown.map((dropdownLink) => {
-          dropdownLink.link &&
-            dropdownLink.link === Router.route &&
-            setParentName(item.title)
-          dropdownLink.links &&
-            dropdownLink.links.map(
-              (link) => link.link === Router.route && setParentName(item.title)
-            )
-        })
-      item.megamenu &&
-        item.megamenu.map((megamenuColumn) =>
-          megamenuColumn.map((megamenuBlock) =>
-            megamenuBlock.links.map((dropdownLink) => {
-              if (dropdownLink.link === Router.route) {
-                dropdownLink.parent
-                  ? setParentName(dropdownLink.parent)
-                  : setParentName(item.title)
-              }
-            })
-          )
-        )
-      item.link === Router.route && setParentName(item.title)
-    })
-  }
-
-  useEffect(highlightDropdownParent, [])
-
+function BasicExample() {
   return (
-    <header
-      className={`header ${props.headerClasses ? props.headerClasses : ""} ${
-        props.headerAbsolute ? "header-absolute" : ""
-      }`}
-    >
-      {/* Top Bar*/}
-        {/*<TopBar innerRef={topbarRef} hideTopbar={props.hideTopbar} />*/}
-        <TopBarNew/>
-      {/* Top Bar End*/}
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home"><img src="img/Logo 1.svg" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="m-auto">
+            <Nav.Link className="mr-4" href="#home">Home</Nav.Link>
+            <Nav.Link className="mr-4" href="#">Dress</Nav.Link>
+            <Nav.Link className="mr-4" href="#">Accessories</Nav.Link>
+            <Nav.Link className="lcl-spl ml-64" href="#">Local Specials</Nav.Link>
+          </Nav>
+          <Navbar.Text className="justify-content-end">
+            <svg className="mr-20" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="codicon:account" clip-path="url(#clip0_974_120)">
+                <path id="Vector" d="M20 9.99C20 4.475 15.52 0 10 0C4.48 0 0 4.475 0 9.99C0 13.0275 1.38 15.765 3.54 17.6025C3.56 17.6225 3.58 17.6225 3.58 17.6425C3.76 17.7825 3.94 17.9225 4.14 18.0625C4.24 18.1225 4.32 18.2013 4.42 18.2812C6.07258 19.4017 8.02339 20.0004 10.02 20C12.0166 20.0004 13.9674 19.4017 15.62 18.2812C15.72 18.2213 15.8 18.1425 15.9 18.0812C16.08 17.9425 16.28 17.8025 16.46 17.6625C16.48 17.6425 16.5 17.6425 16.5 17.6225C18.62 15.7637 20 13.0275 20 9.99ZM10 18.7412C8.12 18.7412 6.4 18.1413 4.98 17.1425C5 16.9825 5.04 16.8237 5.08 16.6637C5.19917 16.2301 5.37396 15.8138 5.6 15.425C5.82 15.045 6.08 14.705 6.4 14.405C6.7 14.105 7.06 13.8263 7.42 13.6063C7.8 13.3863 8.2 13.2262 8.64 13.1062C9.08342 12.9867 9.54075 12.9266 10 12.9275C11.3633 12.9178 12.6765 13.4408 13.66 14.385C14.12 14.845 14.48 15.385 14.74 16.0037C14.88 16.3638 14.98 16.7437 15.04 17.1425C13.564 18.1802 11.8043 18.7384 10 18.7412ZM6.94 9.49125C6.76378 9.08778 6.67516 8.6515 6.68 8.21125C6.68 7.7725 6.76 7.3325 6.94 6.9325C7.12 6.5325 7.36 6.17375 7.66 5.87375C7.96 5.57375 8.32 5.335 8.72 5.155C9.12 4.975 9.56 4.895 10 4.895C10.46 4.895 10.88 4.975 11.28 5.155C11.68 5.335 12.04 5.575 12.34 5.87375C12.64 6.17375 12.88 6.53375 13.06 6.9325C13.24 7.3325 13.32 7.7725 13.32 8.21125C13.32 8.67125 13.24 9.09125 13.06 9.49C12.8863 9.88408 12.6423 10.2433 12.34 10.55C12.0332 10.8519 11.674 11.0954 11.28 11.2688C10.4535 11.6084 9.52647 11.6084 8.7 11.2688C8.30602 11.0954 7.94684 10.8519 7.64 10.55C7.33727 10.2477 7.09912 9.88836 6.94 9.49125ZM16.22 16.1238C16.22 16.0837 16.2 16.0638 16.2 16.0238C16.0033 15.398 15.7134 14.8055 15.34 14.2663C14.9663 13.723 14.507 13.2438 13.98 12.8475C13.5775 12.5447 13.1413 12.2897 12.68 12.0875C12.8899 11.9491 13.0843 11.7886 13.26 11.6087C13.5582 11.3144 13.82 10.9854 14.04 10.6287C14.4829 9.90101 14.7117 9.06311 14.7 8.21125C14.7062 7.58064 14.5837 6.9554 14.34 6.37375C14.0994 5.8133 13.7531 5.30445 13.32 4.875C12.8876 4.45004 12.3786 4.11074 11.82 3.875C11.2374 3.63174 10.6113 3.50968 9.98 3.51625C9.34859 3.51007 8.72253 3.63256 8.14 3.87625C7.57657 4.11148 7.06639 4.45798 6.64 4.895C6.21505 5.32698 5.87574 5.83552 5.64 6.39375C5.39631 6.9754 5.27381 7.60064 5.28 8.23125C5.28 8.67125 5.34 9.09125 5.46 9.49C5.58 9.91 5.74 10.29 5.96 10.6488C6.16 11.0087 6.44 11.3288 6.74 11.6288C6.92 11.8088 7.12 11.9675 7.34 12.1075C6.87729 12.3151 6.4409 12.5769 6.04 12.8875C5.52 13.2875 5.06 13.7662 4.68 14.2863C4.30282 14.8233 4.0126 15.4164 3.82 16.0438C3.8 16.0837 3.8 16.1238 3.8 16.1437C2.22 14.545 1.24 12.3875 1.24 9.99C1.24 5.175 5.18 1.23875 10 1.23875C14.82 1.23875 18.76 5.175 18.76 9.99C18.7574 12.2899 17.8441 14.4953 16.22 16.1238Z" fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_974_120">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
 
-      {/* Navbar*/}
-      <div ref={navbarRef}>
-        <Navbar
-          fixed={props.nav.fixed ? props.nav.fixed : ""}
-          expand="lg"
-          expanded={collapsed}
-          bg={collapsed || props.nav.color === "white" ? "white" : false}
-          className={` ${
-            props.nav.classes
-              ? props.nav.classes
-              : "navbar-sticky bg-fixed-white"
-          } ${additionalNavClasses ? additionalNavClasses : ""} navbar-airy`}
-          variant={props.nav.dark ? "dark" : "light"}
-        >
-          <Container>
-            {/* Navbar Header  */}
-            <Link href="/index-5" passHref>
-              <Navbar.Brand className="py-1" aria-label="Back to homepage">
-                <Logo />
-              </Navbar.Brand>
-            </Link>
 
-            <Navbar.Toggle
-              onClick={() => setCollapsed(!collapsed)}
-              className="navbar-toggler-right"
-            >
-              <FontAwesomeIcon icon={faBars} />
-            </Navbar.Toggle>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="solar:bag-outline">
+                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M9.99954 2.2915C9.50226 2.2915 9.02534 2.48905 8.67371 2.84068C8.32208 3.19231 8.12454 3.66922 8.12454 4.1665V4.38317C8.58871 4.37484 9.09787 4.37484 9.65787 4.37484H10.342C10.9004 4.37484 11.4104 4.37484 11.8754 4.38317V4.1665C11.8754 3.9202 11.8268 3.67632 11.7326 3.44878C11.6383 3.22124 11.5001 3.0145 11.3259 2.84038C11.1517 2.66626 10.9449 2.52817 10.7173 2.43399C10.4897 2.33981 10.2458 2.29139 9.99954 2.2915ZM13.1245 4.43984V4.1665C13.1245 3.3377 12.7953 2.54285 12.2092 1.9568C11.6232 1.37074 10.8283 1.0415 9.99954 1.0415C9.17074 1.0415 8.37588 1.37074 7.78983 1.9568C7.20378 2.54285 6.87454 3.3377 6.87454 4.1665V4.43984C6.75537 4.44984 6.64121 4.4615 6.52954 4.47567C5.68787 4.57984 4.99454 4.79817 4.40454 5.28734C3.81537 5.7765 3.47287 6.41817 3.21537 7.2265C2.96537 8.00984 2.77704 9.01567 2.54037 10.2815L2.52287 10.3732C2.18787 12.159 1.92454 13.5665 1.87537 14.6757C1.82537 15.8132 1.99537 16.7548 2.63704 17.5273C3.27871 18.3007 4.17287 18.6407 5.29954 18.8015C6.39954 18.9582 7.83037 18.9582 9.64787 18.9582H10.352C12.1687 18.9582 13.6004 18.9582 14.6995 18.8015C15.8262 18.6407 16.7212 18.3007 17.3629 17.5273C18.0045 16.7548 18.1729 15.8132 18.1237 14.6757C18.0754 13.5665 17.8112 12.159 17.4762 10.3732L17.4595 10.2815C17.222 9.01567 17.0329 8.009 16.7845 7.2265C16.5262 6.41817 16.1845 5.7765 15.5945 5.28734C15.0054 4.79817 14.3112 4.579 13.4695 4.47567C13.3548 4.4616 13.2397 4.44965 13.1245 4.43984ZM6.68287 5.7165C5.97037 5.804 5.53954 5.96984 5.20287 6.24984C4.86704 6.52817 4.62454 6.92067 4.40621 7.60567C4.18371 8.30567 4.00787 9.23734 3.76121 10.5532C3.41454 12.4007 3.16871 13.7198 3.12454 14.7307C3.08121 15.7223 3.24121 16.2973 3.59871 16.7298C3.95704 17.1607 4.49287 17.4232 5.47621 17.5632C6.47621 17.7065 7.81954 17.7082 9.6987 17.7082H10.3004C12.1795 17.7082 13.522 17.7065 14.5229 17.564C15.5062 17.4232 16.042 17.1607 16.4004 16.7298C16.7587 16.2982 16.9179 15.7232 16.8754 14.7298C16.8304 13.7207 16.5845 12.4007 16.2379 10.5532C15.9912 9.2365 15.8162 8.3065 15.5929 7.60567C15.3745 6.92067 15.1329 6.52817 14.7962 6.249C14.4595 5.96984 14.0295 5.804 13.3162 5.71567C12.5862 5.62567 11.6387 5.62484 10.2995 5.62484H9.69954C8.36037 5.62484 7.41287 5.62567 6.68287 5.7165Z" fill="black" />
+              </g>
+            </svg>
 
-            {/* Navbar Collapse */}
-            <Navbar.Collapse>
-              <>
-                <Nav className="mx-auto">
-                  {menu &&
-                    menu.map((item) =>
-                      item.dropdown || item.megamenu ? (
-                        // show entire menu to unlogged user or hide items that have hideToLoggedUser set to true
-                        !props.loggedUser ||
-                        (props.loggedUser && !item.hideToLoggedUser) ? (
-                          <Dropdown
-                            key={item.title}
-                            className={
-                              item.position ? `position-${item.position}` : ``
-                            }
-                          >
-                            <Dropdown.Toggle
-                              as={NavLink}
-                              className={
-                                parentName === item.title ? "active" : ""
-                              }
-                            >
-                              {item.title}
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu
-                              className={`dropdown-menu-animated ${
-                                item.megamenu ? "megamenu py-lg-0" : ""
-                              }`}
-                            >
-                              {item.dropdown &&
-                                item.dropdown.map((dropdownItem) =>
-                                  dropdownItem.links ? (
-                                    <React.Fragment key={dropdownItem.title}>
-                                      {dropdownItem.divider && (
-                                        <Dropdown.Divider />
-                                      )}
-                                      <h6 className="dropdown-header fw-normal">
-                                        {dropdownItem.title}
-                                      </h6>
-                                      {dropdownItem.links.map((link) => (
-                                        <ActiveLink
-                                          key={link.title}
-                                          activeClassName="active"
-                                          href={link.link}
-                                          passHref
-                                        >
-                                          <Dropdown.Item
-                                            onClick={() =>
-                                              onLinkClick(item.title)
-                                            }
-                                          >
-                                            {link.title}
-                                            {link.new && (
-                                              <Badge
-                                                variant="warning"
-                                                className="ms-1 mt-n1"
-                                              >
-                                                New
-                                              </Badge>
-                                            )}
-                                          </Dropdown.Item>
-                                        </ActiveLink>
-                                      ))}
-                                    </React.Fragment>
-                                  ) : (
-                                    <ActiveLink
-                                      key={dropdownItem.title}
-                                      activeClassName="active"
-                                      href={dropdownItem.link}
-                                      passHref
-                                    >
-                                      <Dropdown.Item
-                                        onClick={() => onLinkClick(item.title)}
-                                      >
-                                        {dropdownItem.title}
-                                        {dropdownItem.new && (
-                                          <Badge
-                                            bg="info-light"
-                                            text="info"
-                                            className="ms-1 mt-n1"
-                                          >
-                                            New
-                                          </Badge>
-                                        )}
-                                      </Dropdown.Item>
-                                    </ActiveLink>
-                                  )
-                                )}
-                              {/* MEGA MENU */}
-                              {item.megamenu && (
-                                <MegaMenu
-                                  onLinkClick={onLinkClick}
-                                  item={item}
-                                />
-                              )}
-                              {/* /MEGA MENU */}
-                            </Dropdown.Menu>
-                          </Dropdown>
-                        ) : (
-                          ""
-                        )
-                      ) : (props.loggedUser && !item.hideToLoggedUser) ||
-                        !props.loggedUser ? (
-                        <Nav.Item
-                          key={item.title}
-                          className={
-                            item.button
-                              ? "mt-3 mt-lg-0 ms-lg-3 d-lg-none d-xl-inline-block"
-                              : ""
-                          }
-                        >
-                          {item.button ? (
-                            item.showToLoggedUser !== false && (
-                              <ActiveLink
-                                activeClassName="active"
-                                href={item.link}
-                              >
-                                <Button
-                                  variant="primary"
-                                  onClick={() => onLinkClick(item.title)}
-                                >
-                                  {item.title}
-                                </Button>
-                              </ActiveLink>
-                            )
-                          ) : (
-                            <ActiveLink
-                              activeClassName="active"
-                              href={item.link}
-                              passHref
-                            >
-                              <Nav.Link onClick={() => onLinkClick(item.title)}>
-                                {item.title}
-                              </Nav.Link>
-                            </ActiveLink>
-                          )}
-                        </Nav.Item>
-                      ) : (
-                        ""
-                      )
-                    )}
-                </Nav>
+          </Navbar.Text>
+        </Navbar.Collapse>
 
-                {/* Menu Icons */}
-                <Icons
-                  loggedUser={props.loggedUser}
-                  searchToggle={searchToggle}
-                  setSearchToggle={setSearchToggle}
-                />
-                {/* /Menu Icons */}
-              </>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </div>
-      {/* /Navbar */}
-
-      {/* Fullscreen search area*/}
-      {searchToggle && (
-        <FullScreenSearch
-          searchToggle={searchToggle}
-          setSearchToggle={setSearchToggle}
-        />
-      )}
-      {/* /Fullscreen search area*/}
-    </header>
-  )
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Header
+export default BasicExample;

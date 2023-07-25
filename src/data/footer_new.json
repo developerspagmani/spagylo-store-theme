@@ -2,61 +2,83 @@
     {
       "logo": true,
       "content": "Nonprofits: Offer your supporters a convenient and meaningful way to give.",
-      "social": [
-        {
-          "title": "facebook",
-          "link": "#"
-        },
-        {
-          "title": "instagram",
-          "link": "#"
-        },
-        {
-          "title": "twitter",
-          "link": "#"
-        },
-        {
-          "title": "pinterest",
-          "link": "#"
-        },
-       
-        {
-          "title": "youtube",
-          "link": "#"
-        }
-      ],
-      "lg": "4"
+    
+      "lg": "2"
     },
     {
-      "title": "KEEP IN TOUCH",
-      "content": "Subscribe to receive new product updates, be the first to know about sales, and more.",
-      "contentBottomMargin": "3",
-      "form": {
-        "placeholder": "Enter Your Email Address"
-      },
-      "lg": "4"
-    },
-    {
-      "title": "MORE INFO",
+      "title": "Quick Links",
       "links": [
         {
-          "title": "Shipping, Delivery & Refunds",
+          "title": "Home",
           "link": "/category"
         },
         {
-          "title": "Partner Program",
+          "title": "Shop",
           "link": "/category"
         },
         {
-          "title": "Privacy Policy",
+          "title": "Cart",
           "link": "/contact"
         },
         {
-          "title": "Terms & Conditions",
+          "title": "Sign Up",
+          "link": "/blog"
+        },
+        {
+          "title": "Sign In",
           "link": "/blog"
         }
       ],
-      "lg": "4"
-    }
+      "lg": "2"
+    },
+      {
+        "title": "MORE INFO",
+        "links": [
+          {
+            "title": "Shipping, Delivery & Refunds",
+            "link": "/category"
+          },
+          {
+            "title": "Partner Program",
+            "link": "/category"
+          },
+          {
+            "title": "Privacy Policy",
+            "link": "/contact"
+          },
+          {
+            "title": "Terms & Conditions",
+            "link": "/blog"
+          }
+        ],
+        "lg": "2"
+      },
+      {
+        "title": "Social Media",
+        "social": [
+          {
+            "title": "facebook",
+            "link": "#"
+          },
+          {
+            "title": "instagram",
+            "link": "#"
+          },
+          {
+            "title": "twitter",
+            "link": "#"
+          },
+          {
+            "title": "pinterest",
+            "link": "#"
+          },
+         
+          {
+            "title": "youtube",
+            "link": "#"
+          }
+        ],
+        "lg": "2"
+      }
   ]
   
