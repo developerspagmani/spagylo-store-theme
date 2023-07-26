@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-import hypsoCollectionsData from "../data/hypso-collections.json"; // Update the path to the actual location of your JSON file
+import hypsoCollectionsData from "../data/hypso-collections.json";
 
 export default function HypsoCollections() {
   const { women, men } = hypsoCollectionsData;

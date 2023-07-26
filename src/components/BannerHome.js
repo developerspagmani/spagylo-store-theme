@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
-import bannerData from "../data/banner-home.json"; // Update the path to the actual location of your JSON file
+import bannerData from "../data/banner-home.json";
 
 export default function BannerHome() {
   const { imgSrc, title, subtitle, buttonLabel, svg } = bannerData;
