@@ -3,17 +3,18 @@ import Link from "next/link";
 
 export default function TopProductHome() {
     return (
-        <section className="productListBlock">
+        <section className="TopProduct">
             {/* TOP PRODUCTS START */}
             <Container>
-                <Row>
-                    <div className="top_products">
-                        <div className="col-lg-12">
-                            <div className="hypso_top_products_title">
-                                <h3>TOP PRODUCTS</h3>
-                            </div>
+                <div className="hypso_top_products_title">
+                    <h3>TOP PRODUCTS</h3>
+                </div>
 
-                            <div class="card-group hypso-top-card">
+                <div className="top_products">
+
+                    <div class="card-group hypso-top-card">
+                        <Row>
+                            <Col xl="3" md="6" sm="6" >
                                 <div class="card hypso-card-border">
                                     <img src="/img/tshirt.jpg" class="hypso-card-img-top" alt="..." />
                                     <div class="card-body">
@@ -21,6 +22,8 @@ export default function TopProductHome() {
                                         <p class="card-price text-center"><small class="text-muted">Rs. 250.00</small></p>
                                     </div>
                                 </div>
+                            </Col>
+                            <Col xl="3" md="6" sm="6">
                                 <div class="card hypso-card-border">
                                     <img src="/img/tshirt.jpg" class="hypso-card-img-top" alt="..." />
                                     <div class="card-body">
@@ -28,6 +31,8 @@ export default function TopProductHome() {
                                         <p class="card-price text-center"><small class="text-muted">Rs. 250.00</small></p>
                                     </div>
                                 </div>
+                            </Col>
+                            <Col xl="3" md="6" sm="6">
                                 <div class="card hypso-card-border">
                                     <img src="/img/tshirt.jpg" class="hypso-card-img-top" alt="..." />
                                     <div class="card-body">
@@ -35,6 +40,8 @@ export default function TopProductHome() {
                                         <p class="card-price text-center"><small class="text-muted">Rs. 250.00</small></p>
                                     </div>
                                 </div>
+                            </Col>
+                            <Col xl="3" md="6" sm="6">
                                 <div class="card hypso-card-border">
                                     <img src="/img/tshirt.jpg" class="hypso-card-img-top" alt="..." />
                                     <div class="card-body">
@@ -42,10 +49,11 @@ export default function TopProductHome() {
                                         <p class="card-price text-center"><small class="text-muted">Rs. 250.00</small></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </Col>
+
+                        </Row>
                     </div>
-                </Row>
+                </div>
             </Container>
             {/* TOP PRODUCTS END */}
         </section>

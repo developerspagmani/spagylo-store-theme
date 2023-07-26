@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function LocalProductsHypso() {
 
     return (
-        <section className="productListBlock">
+        <section className="LocalProductsHypso">
 
 
 

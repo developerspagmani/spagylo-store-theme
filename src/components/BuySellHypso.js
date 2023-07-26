@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function BuySellHypso() {
 
     return (
-        <section className="productListBlock">
+        <section className="BuySellHypso">
             {/* Buy & Sell products on HYPSO START*/}
             <div className="poster_men_women">
                 <div className="hypso-banner-middle">
