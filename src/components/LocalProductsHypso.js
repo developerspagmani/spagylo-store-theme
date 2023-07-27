@@ -5,9 +5,6 @@ export default function LocalProductsHypso() {
 
     return (
         <section className="LocalProductsHypso">
-
-
-
             {/* Local Products START */}
             <div className="local_products">
                 <Container>
@@ -15,7 +12,6 @@ export default function LocalProductsHypso() {
                         <h3>LOCAL SPECIALS</h3>
                     </div>
                     <Row>
-
                         <div className="col-lg-33 local-head-img p-0">
                             <img src="/img/jug-coconut-oil-whit-coconut-put-dark-background 1.png" class="local-product-head" alt="..." />
                             <div className="text-over-local-img">
@@ -23,9 +19,6 @@ export default function LocalProductsHypso() {
                                 <a href="#">SHOP LOCAL</a>
                             </div>
                         </div>
-
-
-
                         <div className="col-lg-34">
                             <div class="local_spl_product_list">
                                 <div class="col-22">
@@ -66,11 +59,9 @@ export default function LocalProductsHypso() {
                                 </div>
                             </div>
                         </div>
-
                     </Row>
                 </Container>
             </div>
-
             {/* Local Products END */}
         </section>
     );

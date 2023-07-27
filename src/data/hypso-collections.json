@@ -1,11 +1,10 @@
 {
     "women": {
-      "imgSrc": "/img/women-collection.png",
-      "title": "Women’s Collection & Accessories"
+        "imgSrc": "/img/women-collection.png",
+        "title": "Women’s Collection & Accessories"
     },
     "men": {
-      "imgSrc": "/img/Mask group (1).png",
-      "title": "Men’s Collection & Accessories"
+        "imgSrc": "/img/Mask group (1).png",
+        "title": "Men’s Collection & Accessories"
     }
-  }
-  
+}
