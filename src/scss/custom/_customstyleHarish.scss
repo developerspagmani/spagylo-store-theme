@@ -1373,3 +1373,332 @@ svg {
     vertical-align: unset;
     margin-left: 10px;
 }
+
+
+
+
+/////////********************** Home Page End **********************///////////
+
+
+
+/////////********************** Listing Women Page Start ******************//////////
+
+
+////** Banner Start ****////
+img.banner_women {
+    width: 100%;
+}
+
+img.banner_women-circle {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.listing-women-banner-img-circle {
+    position: absolute;
+    top: 22%;
+    left: 66%;
+}
+
+.listing-page-banner {
+    position: relative;
+}
+
+////** Banner End ****////
+
+
+
+
+////** City Start ****////
+.city-name-title {
+    margin-top: 45px;
+}
+
+h2.city-name {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+////** City End ****////
+
+
+
+////** Women-collections Start ****////
+.hypso-womencollection-title {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.hypso-womencollection-title h3 {
+    color: #F46800;
+    font-family: HK Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 30px;
+}
+
+.card.hypso-card-women-border {
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-left: 30px;
+    border: none;
+}
+
+
+////** Women-collections End ****////
+
+
+.side-options {
+    background: #F7F7F7;
+    margin-top: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+label.select-city.form-label {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+select#formGridState {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.selected-city-card {
+    display: flex;
+    margin-top: 15px;
+}
+
+.selected-city-card h6 {
+    border-radius: 30px;
+    background: #FFF;
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 4px 10px;
+    margin-right: 10px;
+}
+
+.selected-city-card button {
+    background-color: #F46800;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+}
+
+a.filter-city-btn {
+    color: #FFF;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5px 35px;
+    border-radius: 30px;
+    background: #F46800;
+}
+
+.filter-city-filter {
+    margin-top: 20px;
+}
+
+.filter-below {
+    margin: 30px 0px;
+    border-bottom: 1px solid #132c73;
+}
+
+.category-collections-title h5 {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.category-collections-list a {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.category-collections-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.women-collection-three {
+    width: 90%;
+}
+
+.women-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fixed-filter {
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    width: 100%;
+}
+
+.fixed-filter button {
+    display: block;
+    width: 100%;
+    background-color: #F46800;
+    color: #fff;
+    border: none;
+    padding: 10px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700px;
+}
+
+.x-close {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.check-box {
+    color: #142C73;
+    padding-top: 20px;
+}
+
+button.drop-check {
+    color: #142c73;
+    border: none;
+    padding: 10px 30px;
+}
+
+.select-cities {
+    color: #142C73;
+    font-family: HK Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+span.downarrowcity {
+    padding-left: 80px;
+}
+
+span.uparrowcity {
+    padding-left: 80px;
+}
+
+
+@media (max-width: 1440px) {
+    .fixed-filter {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .side-options {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .fixed-filter {
+        display: block;
+    }
+
+    .side-options {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F7F7F7;
+        z-index: 9999;
+        margin-top: 0;
+        padding: 50px;
+    }
+
+    .side-options.show {
+        display: block;
+    }
+
+    .hypso-womencollection-title h3 {
+        margin-left: 0px;
+    }
+
+    .card.hypso-card-women-border {
+        margin-left: 0px;
+    }
+
+    .w-000 {
+        width: 0px;
+    }
+
+    .women-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .women-collection-three {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .women-collection-three {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h2.city-name {
+        font-size: 28px;
+    }
+
+    .hypso-womencollection-title h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .women-collection-three {
+        width: 100%;
+    }
+}
