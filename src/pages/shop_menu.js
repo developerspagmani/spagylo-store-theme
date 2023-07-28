@@ -271,7 +271,7 @@ export default function Home() {
             {showSideOptions ? (
               <span className="downarrowfilter">&#x25BC;</span>
             ) : (
-              
+
               <span className="uparrowfilter">&#x25B2;</span>
             )}
           </button>

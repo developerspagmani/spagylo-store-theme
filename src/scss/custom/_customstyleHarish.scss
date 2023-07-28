@@ -1550,6 +1550,11 @@ a.filter-city-btn {
     line-height: 32px;
 }
 
+.category-collections-list a:hover {
+    text-decoration: underline;
+    color: #F46800;
+}
+
 .category-collections-list {
     display: flex;
     flex-direction: column;
@@ -1630,7 +1635,7 @@ span.uparrowcity {
     .side-options {
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left: 5px;
+        padding-left: 15px;
         padding-right: 5px;
     }
 
@@ -1680,6 +1685,7 @@ span.uparrowcity {
     .women-collection-three {
         width: 100%;
     }
+
     .w-48-p {
         width: 48%;
     }
@@ -1729,7 +1735,7 @@ span.uparrowcity {
 
     .hypso-women-card {
         display: block;
-        justify-content:center;
+        justify-content: center;
         padding-left: 0px;
         padding-right: 0px;
     }
