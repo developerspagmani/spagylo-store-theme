@@ -2,18 +2,25 @@ import React, { useState, useEffect, useRef } from "react"
 
 import Link from "next/link"
 import Router from "next/router"
-
+import { FaTimes } from 'react-icons/fa';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function BasicExample() {
+  const [navbarExpanded, setNavbarExpanded] = useState(false);
+
+  const handleNavbarToggle = () => {
+    setNavbarExpanded((prevState) => !prevState);
+  };
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home"><img src="img/Logo 1.svg" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle}>
+          {navbarExpanded ? <FaTimes /> : <span>&#9776;</span>}
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
             <Nav.Link className="mr-4" href="#home">Home</Nav.Link>

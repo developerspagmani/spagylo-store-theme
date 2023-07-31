@@ -2,6 +2,10 @@ body {
     width: 100%;
 }
 
+h3 {
+    margin-bottom: 0px !important;
+}
+
 //// Banner Start////
 .banner_bg {
     display: flex;
@@ -924,54 +928,12 @@ img.local-product-head {
         width: 211px;
     }
 
-    // .buy-sell-title {
-    //     position: absolute;
-    //     top: 20px;
-    //     width: 60%;
-    // }
-
-    // .buy-sell-title h3 {
-    //     color: #000;
-    //     font-family: HK Grotesk;
-    //     font-size: 16px;
-    //     font-style: normal;
-    //     font-weight: 800;
-    //     line-height: normal;
-    // }
-
-    // .hypso-blue {
-    //     color: #142C73;
-    //     font-family: HK Grotesk;
-    //     font-size: 16px;
-    //     font-style: normal;
-    //     font-weight: 800;
-    //     line-height: normal;
-    // }
-
     .hypso-banner-middle {
         background-color: rgba(232, 199, 175, 0.49);
         padding-top: 0px;
         padding-bottom: 15px;
         margin-bottom: 60px;
     }
-
-    // .heading_wrapper {
-    //     width: 49%;
-    //     position: absolute;
-    //     left: 33%;
-    //     top: 8%;
-    //     transform: translate(0, 50%);
-    //     z-index: 2;
-    // }
-
-    // .buy-sell-title p {
-    //     color: #F46800;
-    //     font-family: Poppins;
-    //     font-size: 11px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: normal;
-    // }
 
     img.local-product-head {
         width: 100%;
@@ -1266,13 +1228,6 @@ img.local-product-head {
         padding-bottom: 1rem !important;
     }
 
-
-
-
-
-
-
-
     img.hypso-women-banner {
         width: 100%;
     }
@@ -1341,8 +1296,8 @@ img.local-product-head {
 }
 
 svg {
-    vertical-align: unset;
-    margin-left: 10px;
+    vertical-align: -2px;
+    // margin-left: 10px;   
 }
 
 
@@ -1371,7 +1326,7 @@ img.banner_women-circle {
     left: 66%;
 }
 
-.listing-page-banner {
+.women-page-banner {
     position: relative;
 }
 
@@ -1432,8 +1387,9 @@ h2.city-name {
     margin-top: 45px;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 788px;
 }
 
 label.select-city.form-label {
@@ -1536,20 +1492,20 @@ a.filter-city-btn {
     width: 90%;
 }
 
-.women-row {
+.women-collection-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.fixed-filter {
+.bottom-filter {
     position: fixed;
     bottom: 0px;
     z-index: 9999;
     width: 100%;
 }
 
-.fixed-filter button {
+.bottom-filter button {
     display: block;
     width: 100%;
     background-color: #F46800;
@@ -1564,12 +1520,12 @@ a.filter-city-btn {
 
 .x-close {
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .check-box {
     color: #142C73;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 button.drop-check {
@@ -1595,10 +1551,18 @@ span.uparrowcity {
     padding-left: 80px;
 }
 
+.form-check-input:checked {
+    background-color: #F46800;
+    border-color: #F46800;
+}
 
 @media (max-width: 1440px) {
-    .fixed-filter {
+    .bottom-filter {
         display: none;
+    }
+
+    .w-100-100 {
+        width: 75%;
     }
 }
 
@@ -1606,6 +1570,7 @@ span.uparrowcity {
     .listing-women-banner-img-circle {
         top: 12%;
     }
+
     .side-options {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1617,11 +1582,38 @@ span.uparrowcity {
 
 @media (max-width: 992px) {
 
+    .row  {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0; 
+        padding-left: 0; 
+        margin-top: 0;
+    }
+
+    .w-100-100 {
+        max-width: 720px !important;
+        width: 86%;
+    }
+
+    .navbar.navbar-expand-lg {
+        padding: 0px !important;
+    }
+
+    .lcl-spl {
+        padding: 10px 10px !important;
+        width: 22%;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 15px;
+    }
+
     .listing-women-banner-img-circle {
         top: 12%;
     }
 
-    .fixed-filter {
+    .bottom-filter {
         display: block;
     }
 
@@ -1634,7 +1626,8 @@ span.uparrowcity {
         background-color: #F7F7F7;
         z-index: 9999;
         margin-top: 0;
-        padding: 50px;
+        padding: 25px;
+        height: auto;
     }
 
     .side-options.show {
@@ -1643,7 +1636,7 @@ span.uparrowcity {
 
     .hypso-womencollection-title h3 {
         margin-left: 0px;
-        padding-left: 30px;
+        padding-left: 0px;
     }
 
     .card.hypso-card-women-border {
@@ -1654,7 +1647,7 @@ span.uparrowcity {
         width: 0px;
     }
 
-    .women-row {
+    .women-collection-row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1672,10 +1665,22 @@ span.uparrowcity {
     .hypso-women-card {
         display: flex;
         justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
+    .city-name-title {
+        margin-top: 30px;
+    }
+
+    .hypso-womencollection-title {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .footerSection .copyRights {
+        margin-bottom: 2.5rem !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1690,12 +1695,13 @@ span.uparrowcity {
     .hypso-women-card {
         display: flex;
         justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-
-    h2.city-name {
-        padding-left: 10px;
+    .w-100-100 {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -1718,9 +1724,29 @@ span.uparrowcity {
         padding-left: 0px;
         padding-right: 0px;
     }
+
+    .lcl-spl {
+        padding: 10px 10px !important;
+        width: 40%;
+        text-align: center;
+    }
+    .hypso-womencollection-title h3 {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .w-100-100 {
+      max-width: 720px ;
+    }
 }
 
 @media (max-width: 375px) {
+
+    .lcl-spl {
+        padding: 10px 10px !important;
+        width: 45%;
+        text-align: center;
+    }
+
     .women-collection-three {
         width: 100%;
     }

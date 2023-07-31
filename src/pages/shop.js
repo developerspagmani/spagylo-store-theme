@@ -55,12 +55,13 @@ export default function Home() {
       window.removeEventListener("resize", handleResize); // Clean up the event listener on component unmount
     };
   }, []);
+  
 
   return (
     <>
       <section className=" pb-5 bg-white-100" >
 
-        <div className="listing-page-banner">
+        <div className="women-page-banner">
           <div className="listing-women-banner-img">
             <img src="img/young-indian-woman-wearing-sari 1.png" className="banner_women" alt="women-banner" />
           </div>
@@ -69,6 +70,7 @@ export default function Home() {
           </div>
         </div>
 
+       
         <Container>
           <Row>
             <div className="city-name-title">
@@ -76,9 +78,10 @@ export default function Home() {
             </div>
           </Row>
         </Container>
+    
 
 
-        <div className="women-row">
+        <div className="women-collection-row">
           <Col xl="3" md="3" sm="3" className="w-000">
             {showSideOptions && (
               <div className="side-options">
@@ -144,7 +147,7 @@ export default function Home() {
             }
           </Col>
 
-          <Col xl="9" md="9" sm="12">
+          <Col xl="9" md="9" sm="12" className="w-100-100">
             <div className="women-collection-three">
               <div className="hypso-womencollection-title">
                 <h3>Women’s collections</h3>
@@ -265,7 +268,7 @@ export default function Home() {
             </div>
           </Col>
         </div>
-        <div className="fixed-filter">
+        <div className="bottom-filter">
           <button onClick={handleFilterButtonClick}>
             Filter{" "}
             {showSideOptions ? (

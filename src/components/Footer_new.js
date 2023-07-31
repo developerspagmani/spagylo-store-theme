@@ -17,7 +17,7 @@ const Footer_new = () => {
             <Row>
               {footerContent &&
                 footerContent.map((item, index) => (
-                  <Col key={item.title} lg={item.lg || 2} className="mb-4 w-50-50">
+                  <Col key={item.title} lg={item.lg || 2} className=" ">
                     {item.logo && (
                       // <div className="d-flex justify-content-center align-items-center mb-3">
                       <img className="footerLogo" src="img/Logo 1.svg" id="myPinkDIV" />
@@ -27,7 +27,7 @@ const Footer_new = () => {
 
 
                     {item.title && (
-                      <div className="fw-bold text-uppercase mb-3 footerSubTitle">
+                      <div className="fw-bold text-uppercase mb-3 footerSubTitle w-50-50">
                         {item.logo ? (
                           <div dangerouslySetInnerHTML={{ __html: item.title }} />
                         ) : (
@@ -37,7 +37,7 @@ const Footer_new = () => {
                     )}
 
                     {item.links && (
-                      <ul className="list-unstyled">
+                      <ul className="list-unstyled mb-4 w-50-50 ">
                         {item.links.map((link) => (
                           <li key={link.title}>
                             <Link href={link.link}>
