@@ -154,7 +154,8 @@ svg.arrow-left {
     top: 0;
     transform: translate(0, 50%);
     left: 0;
-    right: 0;
+    right: 12%;
+    bottom: 52%;
 }
 
 .collection-about-text-women h3 {
@@ -168,7 +169,7 @@ svg.arrow-left {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     width: 411px;
-    padding: 1% 4%;
+    padding: 1% 5%;
     margin: auto;
 }
 
@@ -181,7 +182,8 @@ svg.arrow-left {
     top: 0;
     transform: translate(0, 50%);
     left: 0;
-    right: 0;
+    right: 12%;
+    bottom: 55%;
 }
 
 .collection-about-text-men h3 {
@@ -193,7 +195,7 @@ svg.arrow-left {
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    padding: 1% 4%;
+    padding: 1% 5%;
     width: 411px;
     margin: auto;
 }
@@ -512,7 +514,8 @@ img.local-product-head {
         top: 0;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 10%;
+        bottom: 58%;
     }
 
     .collection-about-text-women h3 {
@@ -533,7 +536,8 @@ img.local-product-head {
         top: 0;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 10%;
+        bottom: 58%;
     }
 
     .collection-about-text-men h3 {
@@ -627,7 +631,7 @@ img.local-product-head {
         top: 0;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 10%;
     }
 
 
@@ -642,7 +646,7 @@ img.local-product-head {
         top: 0;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 10%;
     }
 
     .collection-about-text-men h3 {
@@ -752,10 +756,10 @@ img.local-product-head {
 
     .collection-about-text-women {
         position: absolute;
-        top: 0;
+        top: 3%;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 10%;
     }
 
     .collection-about-text-women h3 {
@@ -767,21 +771,21 @@ img.local-product-head {
 
     .collection-about-text-men {
         position: absolute;
-        top: 0;
+        top: 15%;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 16%;
     }
 
     .collection-about-text-men h3 {
         font-size: 50px;
         width: 411px;
-        padding: 1% 5% 1% 2%;
+        padding: 1% 6% 1% 2%;
         margin: auto;
     }
 
     img.banner_circle {
-        width: 60%;
+        width: 80%;
     }
 
     img.hypso-women-collection {
@@ -891,10 +895,10 @@ img.local-product-head {
 
     .collection-about-text-women {
         position: absolute;
-        top: 0;
+        top: 2%;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 26%;
     }
 
     .collection-about-text-women h3 {
@@ -906,10 +910,10 @@ img.local-product-head {
 
     .collection-about-text-men {
         position: absolute;
-        top: 0;
+        top: 20%;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 35%;
     }
 
     .collection-about-text-men h3 {
@@ -1174,45 +1178,12 @@ img.local-product-head {
         padding-bottom: 0px;
     }
 
-    // .buy-sell-title {
-    //     position: absolute;
-    //     top: 7px;
-    //     width: 60%;
-    // }
-
-    // .buy-sell-title h3 {
-    //     color: #000;
-    //     font-family: HK Grotesk;
-    //     font-size: 14px;
-    //     font-style: normal;
-    //     font-weight: 800;
-    //     line-height: normal;
-    // }
-
-    // .hypso-blue {
-    //     color: #142C73;
-    //     font-family: HK Grotesk;
-    //     font-size: 14px;
-    //     font-style: normal;
-    //     font-weight: 800;
-    //     line-height: normal;
-    // }
-
-    // .buy-sell-title p {
-    //     color: #F46800;
-    //     font-family: Poppins;
-    //     font-size: 10px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: normal;
-    // }
-
     .collection-about-text-women {
         position: absolute;
         top: 0;
         transform: translate(0, 50%);
         left: 0;
-        right: 0;
+        right: 12%;
     }
 
     .collection-about-text-women h3 {
@@ -1226,9 +1197,9 @@ img.local-product-head {
 
     .collection-about-text-men {
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 0;
-        right: 0;
+        right: 15%;
         transform: translate(0px, 50%);
     }
 
@@ -1337,7 +1308,7 @@ img.local-product-head {
     .buy-sell-title h3 {
         color: #000;
         font-family: HK Grotesk;
-        font-size: 45px;
+        font-size: 36px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
@@ -1347,7 +1318,7 @@ img.local-product-head {
     .hypso-blue {
         color: #142C73;
         font-family: HK Grotesk;
-        font-size: 45px;
+        font-size: 36px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
@@ -1632,6 +1603,9 @@ span.uparrowcity {
 }
 
 @media (max-width: 1200px) {
+    .listing-women-banner-img-circle {
+        top: 12%;
+    }
     .side-options {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1642,6 +1616,11 @@ span.uparrowcity {
 }
 
 @media (max-width: 992px) {
+
+    .listing-women-banner-img-circle {
+        top: 12%;
+    }
+
     .fixed-filter {
         display: block;
     }
